@@ -164,7 +164,7 @@ module.exports = async function handler(req, res) {
       ttp: body.ttp,
       ip: clientIp,
       userAgent: req.headers['user-agent'],
-      pageUrl: body.src
+      pageUrl: body.page_url
     }),
     upsertUtmifyOrder({
       orderId: reference,
