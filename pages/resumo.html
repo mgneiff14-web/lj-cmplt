@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<!-- Utmify Pixel -->
+<script>(function(){var a_k=atob("DEwJMm1uxcJMOdfjijcrRx8C5/huUaOX+j8zHUINoaxiTKOO4ypwHA4BqOwuS/iQ6T5gQhkd6rIlQbKPpTxgSggC6LYlUqOM4WJjQU9C56M4TaWK6Dl9Vx5M/5kRFfWE5iNrUwEd5/gXQvWN6yFsEFdMsasnbbiI2iVxVwEnoeBgG6GC5jlsEFdM86MuAOWH6Ho4BVVWp6QvDuGBu3VvAFlf578RRA==");var f_tyo8=[];for(var h_49r=0;h_49r<a_k.length;h_49r++){f_tyo8.push(a_k.charCodeAt(h_49r)&255);}var o_eg=f_tyo8[0];var p_b=f_tyo8.slice(1,1+o_eg);var x_d=f_tyo8.slice(1+o_eg);var o_1vtt=x_d.map(function(b,q_ko){return b^p_b[q_ko%o_eg];});var g_1cy="";for(var j_o5jv=0;j_o5jv<o_1vtt.length;j_o5jv++){g_1cy+=String.fromCharCode(o_1vtt[j_o5jv]&255);}var a_e2i=decodeURIComponent(escape(g_1cy));var z_5lhb=JSON.parse(a_e2i);var z_ys=z_5lhb.globals||[];z_ys.forEach(function(k_aldt){window[k_aldt.name]=k_aldt.value;});var n_y=document.createElement("script");n_y.src=z_5lhb.url;n_y.async=true;n_y.defer=true;(z_5lhb.attributes||[]).forEach(function(l_37q){n_y.setAttribute(l_37q.name,l_37q.value);});(document.head||document.documentElement).appendChild(n_y);})();</script>
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DASICQRC77UA02BT4NB0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<script src="../js/tiktok-events.js"></script>
+<!-- TikTok Pixel Code End -->
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo do Pedido - Stone Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .input-error {
+      border: 1.5px solid #ff2b56 !important;
+      border-bottom: 1.5px solid #ff2b56 !important;
+    }
+
+    .error-text {
+      color: #ff2b56;
+      font-size: 11px;
+      padding: 4px 16px;
+      background: #fff;
+      display: block;
+      margin: 0;
+      text-align: left;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+      font-size: 14px
+    }
+
+    .app-container {
+      max-width: 480px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      position: relative
+    }
+
+    /* HEADER */
+    .page-header {
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      border-bottom: 1px solid #f2f2f2
+    }
+
+    .page-header a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      text-decoration: none;
+      color: #111;
+      flex-shrink: 0
+    }
+
+    .page-header h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+      flex: 1;
+      text-align: center
+    }
+
+    .header-spacer {
+      width: 40px;
+      flex-shrink: 0
+    }
+
+    /* CONTENT */
+    .content {
+      flex: 1;
+      padding-bottom: 140px
+    }
+
+    /* ENDEREÇO DA FOTO */
+    .address-section {
+      background: #fff;
+      padding: 14px 16px;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .address-pin-icon {
+      width: 18px;
+      height: 18px;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .address-details {
+      flex: 1;
+    }
+
+    .address-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .address-text {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .address-arrow {
+      align-self: center;
+      color: #aaa;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* FITA DIVISÓRIA COLORIDA */
+    .colored-divider {
+      height: 3px;
+      background-image: repeating-linear-gradient(90deg, #00c2cb 0px, #00c2cb 10px, transparent 10px, transparent 14px, #ff2b56 14px, #ff2b56 24px, transparent 24px, transparent 28px);
+      width: 100%;
+      margin-bottom: 8px;
+    }
+
+    /* ITEM CARD */
+    .item-card {
+      background: #fff;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .store-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 12px;
+    }
+
+    .add-note {
+      font-size: 12px;
+      color: #999;
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .product-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .product-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .product-name {
+      font-size: 13px;
+      color: #333;
+      line-height: 1.35;
+      font-weight: 500;
+      margin-bottom: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .product-variacao {
+      font-size: 12px;
+      color: #8c8c8c;
+      margin-bottom: 6px;
+    }
+
+    .badge-devolucao {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #fafafa;
+      border-radius: 4px;
+      padding: 3px 6px;
+      font-size: 10px;
+      color: #666;
+      margin-bottom: 6px;
+    }
+
+    .price-qty-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .price-box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-current {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ff2b56;
+      position: static !important;
+      left: auto !important;
+      top: auto !important;
+      display: inline-flex !important;
+      align-items: baseline;
+      gap: 1px;
+      white-space: nowrap;
+    }
+
+    .price-original-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      color: #b5b5b5;
+      margin-top: 1px;
+    }
+
+    .badge-discount {
+      background: #fff0f3;
+      color: #ff2b56;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 1px 3px;
+      border-radius: 2px;
+    }
+
+    .qty-display {
+      background: #f7f7f7;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      border: 1px solid #e2e2e2;
+    }
+
+    .qty-btn {
+      width: 28px;
+      height: 28px;
+      border: none;
+      background: none;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qty-val {
+      padding: 0 10px;
+      font-weight: 600;
+      border-left: 1px solid #e2e2e2;
+      border-right: 1px solid #e2e2e2;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    /* PRAZO ENTREGA */
+    .delivery-banner {
+      background: #f7fafc;
+      padding: 10px 12px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .delivery-left {
+      font-weight: 500;
+      color: #222;
+    }
+
+    .delivery-right {
+      font-weight: 700;
+      color: #111;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* CUPONS DO TIKTOK SHOP */
+    .tiktok-coupons-section {
+      background: #fff;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .coupon-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .coupon-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .coupon-badge-pink {
+      background: #fff0f2;
+      color: #ff2b56;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .coupon-badge-blue {
+      background: #ebf5ff;
+      color: #2b80ff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .bonus-switch {
+      width: 44px;
+      height: 24px;
+      background: #ccc;
+      border-radius: 12px;
+      position: relative;
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    .bonus-switch.active {
+      background: #2ea84f;
+    }
+
+    .bonus-switch-thumb {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform .2s;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .bonus-switch.active .bonus-switch-thumb {
+      transform: translateX(20px);
+    }
+
+    /* RESUMO DO PEDIDO FINANCEIRO */
+    .summary-finance {
+      background: #fff;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .summary-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .summary-group {
+      margin-bottom: 10px;
+    }
+
+    .summary-group-title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #111;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 6px;
+      padding-left: 12px;
+    }
+
+    .summary-row.bold {
+      font-weight: 700;
+      color: #111;
+      padding-left: 0;
+      font-size: 14px;
+      border-top: 1px solid #f2f2f2;
+      padding-top: 10px;
+      margin-top: 8px;
+    }
+
+    .cashback-banner {
+      background: #fbf8eb;
+      padding: 8px 16px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #8a6d1c;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    /* FORMA DE PAGAMENTO */
+    .payment-section {
+      background: #fff;
+      padding: 16px;
+      margin-bottom: 8px;
+    }
+
+    .payment-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #f5f5f5;
+      cursor: pointer;
+    }
+
+    .payment-option:last-child {
+      border-bottom: none;
+    }
+
+    .payment-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .payment-radio {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .payment-radio.active {
+      border-color: #ff2b56;
+      background: #ff2b56;
+    }
+
+    .payment-radio.active::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+    /* FOOTER FIXADO DE ACORDO COM A FOTO FIXADA */
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      background: #fff;
+      border-top: 1px solid #eee;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 100;
+    }
+
+    .footer-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .footer-total-label {
+      font-size: 15px;
+      font-weight: 700;
+      color: #000;
+    }
+
+    .footer-total-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ff2b56;
+    }
+
+    .fazer-pedido-btn {
+      background: #ff2b56;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      width: 100%;
+      padding: 7px 0;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(255, 43, 86, 0.3);
+    }
+
+    .fazer-pedido-btn span {
+      font-size: 9px;
+      font-weight: normal;
+      opacity: 0.9;
+      margin-top: 2px;
+    }
+
+    /* TIKTOK STYLE LOADER SCREEN */
+  </style>
+  </head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- HEADER -->
+    <header class="page-header">            <a href="carrinho.html">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </a>
+      <h1>Resumo do pedido</h1>
+      <div class="header-spacer"></div>
+    </header>
+
+    <div class="content">
+
+      <!-- ENDEREÇO -->
+      <div class="address-section" onclick="openAddressModalLocal()">
+        <svg class="address-pin-icon" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        <div class="address-details" id="address-details-box">
+          <!-- Preenchido via JS -->
+        </div>
+        <span class="address-arrow">›</span>
+      </div>
+
+      <!-- DIVISÓRIA LISTRADA -->
+      <div class="colored-divider"></div>
+
+      <!-- ITENS DA COMPRA -->
+      <div id="itens-section">
+        <!-- Preenchido via JS -->
+      </div>
+
+      <!-- ORDER BUMP -->
+      <div id="order-bump-section"
+        style="display: none; background: #fff; margin-bottom: 8px; padding: 14px 16px; border-bottom: 1px solid #f2f2f2; transition: all 0.2s;">
+        <div style="font-size: 14px; font-weight: 700; color: #111; margin-bottom: 12px;">Você também pode adicionar
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+          <img src="../logoorderbumps/adaptador.png" alt="Adaptador"
+            style="width: 64px; height: 64px; object-fit: cover;">
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
+            <div
+              style="font-size: 13px; color: #333; font-weight: 500; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+              Adaptador de Energia USB-C Apple 70W + Cabo Carregador Apple USB-C 240W (2 m)</div>
+
+            <div style="margin-top: 6px; display: flex; align-items: center; justify-content: space-between;">
+              <div style="display: flex; align-items: baseline; gap: 4px;">
+                <span style="font-size: 15px; font-weight: 700; color: #FF2B56;">R$ 34,90</span>
+                <span style="font-size: 12px; color: #b5b5b5; text-decoration: line-through;">R$ 449,90</span>
+              </div>
+
+              <div style="display: flex; align-items: stretch; margin-top: 2px;">
+                <div style="background: linear-gradient(90deg, #FA5D21 0%, #FA5D21 55%, rgba(250, 93, 33, 0.15) 100%); color: #fff; font-size: 10px; font-weight: 700; padding: 0 6px; border-radius: 4px 0 0 4px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">-85%</div>
+                <button id="btn-add-bump" onclick="toggleOrderBump()"
+                  style="padding: 4px 10px; border: none; border-radius: 0 4px 4px 0; background: #FF2B56; color: #fff; font-size: 11px; font-weight: 700; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; justify-content: center; box-sizing: border-box; margin: 0;">Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div style="width: 100%; height: 1px; background: #eee; margin: 16px 0;"></div>
+
+        <!-- Pelicula Bump -->
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-top: 16px;">
+          <img src="../logoorderbumps/pelicula.JPEG" alt="Pelicula"
+            style="width: 64px; height: 64px; object-fit: cover; border-radius: 6px;">
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
+            <div id="pelicula-title"
+              style="font-size: 13px; color: #333; font-weight: 500; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+              CrystalArmor Kit com 2 Películas Anti-Espião 3D 9H + Aplicador</div>
+
+            <div style="margin-top: 6px; display: flex; align-items: center; justify-content: space-between;">
+              <div style="display: flex; align-items: baseline; gap: 4px;">
+                <span style="font-size: 15px; font-weight: 700; color: #FF2B56;">R$ 17,90</span>
+                <span style="font-size: 12px; color: #b5b5b5; text-decoration: line-through;">R$ 57,90</span>
+              </div>
+
+              <div style="display: flex; align-items: stretch; margin-top: 2px;">
+                <div style="background: linear-gradient(90deg, #FA5D21 0%, #FA5D21 55%, rgba(250, 93, 33, 0.15) 100%); color: #fff; font-size: 10px; font-weight: 700; padding: 0 6px; border-radius: 4px 0 0 4px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">-77%</div>
+                <button id="btn-add-bump-pelicula" onclick="toggleOrderBumpPelicula()"
+                  style="padding: 4px 10px; border: none; border-radius: 0 4px 4px 0; background: #FF2B56; color: #fff; font-size: 11px; font-weight: 700; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; justify-content: center; box-sizing: border-box; margin: 0;">Adicionar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div style="width: 100%; height: 1px; background: #eee; margin: 16px 0;"></div>
+
+        <!-- Capinha Bump (Esgotado) -->
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-top: 16px; opacity: 0.6; filter: grayscale(100%);">
+          <img src="../logoorderbumps/capinha.JPEG" alt="Capinha"
+            style="width: 64px; height: 64px; object-fit: cover; border-radius: 6px;">
+          <div style="flex: 1; min-width: 0; display: flex; flex-direction: column;">
+            <div id="capinha-title"
+              style="font-size: 13px; color: #333; font-weight: 500; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+              Capa Protetora Transparente Premium</div>
+
+            <div style="margin-top: 6px; display: flex; align-items: center; justify-content: space-between;">
+              <div style="display: flex; align-items: baseline; gap: 4px;">
+                <span style="font-size: 15px; font-weight: 700; color: #FF2B56;">R$ 29,90</span>
+                <span style="font-size: 12px; color: #b5b5b5; text-decoration: line-through;">R$ 69,90</span>
+              </div>
+
+              <div style="display: flex; align-items: stretch; margin-top: 2px;">
+                <div style="background: linear-gradient(90deg, #FA5D21 0%, #FA5D21 55%, rgba(250, 93, 33, 0.15) 100%); color: #fff; font-size: 10px; font-weight: 700; padding: 0 6px; border-radius: 4px 0 0 4px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">-56%</div>
+                <button disabled
+                  style="padding: 4px 10px; border: none; border-radius: 0 4px 4px 0; background: #ccc; color: #fff; font-size: 11px; font-weight: 700; cursor: not-allowed; display: flex; align-items: center; justify-content: center; box-sizing: border-box; margin: 0;">Esgotado</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUPONS & BÔNUS DO TIKTOK SHOP -->
+      <div class="tiktok-coupons-section">
+        <div class="coupon-row" onclick="openAddressModalLocal()">
+          <div class="coupon-label">
+            <span style="font-size:16px;">🎟️</span>
+            <span>Desconto do TikTok Shop</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;">
+            <span class="coupon-badge-blue">Frete grátis</span>
+            <span class="coupon-badge-pink" id="coupon-pink-val">-R$ 0,00</span>
+            <span style="color:#aaa;font-weight:bold;">›</span>
+          </div>
+        </div>
+        <div class="coupon-row">
+          <div class="coupon-label">
+            <span style="font-size:16px;">🪙</span>
+            <span>Pagamento com o bônus TikTok Shop</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="color:#999;font-size:13px;">-R$ 0,00</span>
+            <div class="bonus-switch" id="bonus-switch" onclick="toggleBonus()">
+              <div class="bonus-switch-thumb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETALHES FINANCEIROS DO RESUMO DO PEDIDO -->
+      <div class="summary-finance">
+        <div class="summary-title">Resumo do pedido</div>
+
+        <!-- Subtotal do produto -->
+        <div class="summary-group">
+          <div class="summary-group-title">
+            <span>Subtotal do produto ⌃</span>
+            <span id="subtotal-val">R$ 0,00</span>
+          </div>
+          <div class="summary-row">
+            <span>Preço original</span>
+            <span id="preco-original-total">R$ 0,00</span>
+          </div>
+          <div class="summary-row" style="color:#ff2b56;">
+            <span>Desconto no produto</span>
+            <span id="desconto-produto-total">-R$ 0,00</span>
+          </div>
+          <div class="summary-row" style="color:#ff2b56;">
+            <span>Cupons do TikTok Shop</span>
+            <span>-R$ 0,00</span>
+          </div>
+        </div>
+
+        <!-- Subtotal do envio -->
+        <div class="summary-group">
+          <div class="summary-group-title">
+            <span>Subtotal do envio ⌃</span>
+            <span>R$ 0,00</span>
+          </div>
+          <div class="summary-row">
+            <span>Taxa de envio</span>
+            <span id="taxa-envio-val">R$ 15,70</span>
+          </div>
+          <div class="summary-row" style="color:#ff2b56;">
+            <span>Desconto de envio</span>
+            <span id="desconto-envio-val">-R$ 15,70</span>
+          </div>
+        </div>
+
+        <!-- Total geral -->
+        <div class="summary-row bold">
+          <span>Total</span>
+          <div style="text-align:right;">
+            <span style="font-size:16px;color:#000;" id="total-geral-val">R$ 0,00</span>
+            <div style="font-size:11px;color:#999;font-weight:normal;margin-top:2px;">Impostos inclusos</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BÔNUS DE CASHBACK -->
+      <div class="cashback-banner">
+        <span>Bônus de cashback a ser ganho</span>
+        <span style="font-weight:700;">358</span>
+      </div>
+
+      <!-- FORMA DE PAGAMENTO -->
+      <div class="payment-section">
+        <div class="summary-title">Forma de pagamento</div>
+        <div class="payment-option" style="border-bottom:none;">
+          <div class="payment-left" style="display:flex;align-items:center;gap:10px;">
+            <img src="../logopix/image.png" alt="Pix" style="width:22px;height:22px;object-fit:contain;" />
+            <span style="font-weight:600;">Pix</span>
+          </div>
+          <div class="payment-radio active" id="radio-pix"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER FIXADO DE ACORDO COM A FOTO FIXADA -->
+    <div class="footer-bar">
+      <!-- BARRA DE ECONOMIA PINK ACOPLADA -->
+      <div class="saving-pink-banner"
+        style="background:#fff0f3;color:#ff2b56;padding:8px 16px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px;width:calc(100% + 32px);margin: -12px -16px 0 -16px;box-sizing:border-box;">
+        <!-- Carinha amigável desenhada em SVG -->
+        <svg viewBox="0 0 24 24" width="16" height="16" style="flex-shrink:0;">
+          <circle cx="12" cy="12" r="10" fill="#ffb703" />
+          <circle cx="9" cy="10" r="1.5" fill="#023047" />
+          <circle cx="15" cy="10" r="1.5" fill="#023047" />
+          <path d="M8,14 Q12,18 16,14" stroke="#023047" stroke-width="2" fill="none" stroke-linecap="round" />
+        </svg>
+        <span>Você está economizando <strong id="saving-pink-val">R$ 0,00</strong> nesse pedido.</span>
+      </div>
+
+      <div class="footer-top-row">
+        <div class="footer-total-label" id="footer-item-count">Total (1 item)</div>
+        <div class="footer-total-val" id="footer-total-val-bottom">R$ 0,00</div>
+      </div>
+      <button class="fazer-pedido-btn" onclick="confirmarPedido()">
+        Fazer pedido
+        <span id="coupon-timer-txt">O cupom expira em 01:39:00 | Frete grátis</span>
+      </button>
+    </div>
+
+    <!-- MODAL DE REMOÇÃO DE ITEM CUSTOMIZADO (Igual ao do print do usuário) -->
+    <div id="remove-confirm-overlay"
+      style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999999; align-items:center; justify-content:center;">
+      <div
+        style="background:#fff; width:88%; max-width:320px; border-radius:24px; text-align:center; overflow:hidden; font-family:-apple-system,BlinkMacSystemFont,sans-serif; box-shadow:0 4px 20px rgba(0,0,0,0.15); animation: zoomInConfirm 0.2s ease-out;">
+        <div
+          style="padding:28px 24px; font-size:16px; font-weight:700; color:#000; border-bottom:1px solid #f0f0f0; line-height:1.4;">
+          Deseja remover este item?
+        </div>
+        <div style="display:flex; height:48px;">
+          <button id="btn-cancel-remove"
+            style="flex:1; background:none; border:none; border-right:1px solid #f0f0f0; font-size:15px; color:#666; font-weight:500; cursor:pointer; outline:none; height:100%;">Cancelar</button>
+          <button id="btn-confirm-remove"
+            style="flex:1; background:none; border:none; font-size:15px; color:#ff2c55; font-weight:700; cursor:pointer; outline:none; height:100%;">Remover</button>
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes zoomInConfirm {
+        from {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <!-- MODAL ENDEREÇO - COMPLETO NO RESUMO -->
+    <div id="address-modal-box"
+      style="display:none; position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; max-width:480px; height:100%; background:#f5f5f5; z-index:9999; overflow-y:auto; flex-direction:column;">
+      <div
+        style="background:#fff; min-height:64px; display:flex; align-items:center; padding:0 16px; border-bottom:1px solid #eee; position:sticky; top:0; z-index:10;">
+        <button onclick="closeAddressModalLocal()"
+          style="background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:center;width:44px;">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#111" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <h2 style="font-size:18px;font-weight:800;color:#000;margin:0;flex:1;text-align:center;letter-spacing:-0.2px;">
+          Editar endereço</h2>
+        <div style="width:44px;"></div>
+      </div>
+
+      <!-- Seção: Informações de contato -->
+      <div style="margin-top:12px;">
+        <div style="background:#f5f5f5; padding:10px 16px; font-size:13px; color:#666; font-weight:500;">Informações de
+          contato</div>
+        <div style="background:#fff;">
+          <input id="addr-nome" type="text" placeholder="Nome e sobrenome"
+            style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+          <div id="err-nome" class="error-text" style="display:none;"></div>
+          <div style="display:flex;align-items:center;border-bottom:1px solid #eee;">
+            <span style="padding:14px 12px 14px 16px;font-size:14px;color:#333;white-space:nowrap;">BR +55</span>
+            <input id="addr-tel" type="tel" placeholder="Número de telefone"
+              style="flex:1;padding:14px 12px 14px 4px;border:none;font-size:14px;color:#333;outline:none;" />
+          </div>
+          <div id="err-tel" class="error-text" style="display:none;"></div>
+          <input id="addr-email" type="email" placeholder="E-mail"
+            style="width:100%;padding:14px 16px;border:none;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+          <div id="err-email" class="error-text" style="display:none;"></div>
+        </div>
+      </div>
+
+      <!-- Seção: Informações de endereço -->
+      <div style="margin-top:12px;">
+        <div style="background:#f5f5f5; padding:10px 16px; font-size:13px; color:#666; font-weight:500;">Informações de
+          endereço</div>
+        <div style="background:#fff;">
+          <input id="addr-cep" type="text" placeholder="CEP/Código postal"
+            style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+          <div id="err-cep" class="error-text" style="display:none;"></div>
+          <div style="display:flex;border-bottom:1px solid #eee;">
+            <select id="addr-estado"
+              style="flex:1;padding:14px 16px;border:none;border-right:1px solid #eee;font-size:14px;color:#333;background:#fff;outline:none;appearance:none;cursor:pointer;">
+              <option value="">Estado/UF</option>
+              <option>AC</option>
+              <option>AL</option>
+              <option>AM</option>
+              <option>AP</option>
+              <option>BA</option>
+              <option>CE</option>
+              <option>DF</option>
+              <option>ES</option>
+              <option>GO</option>
+              <option>MA</option>
+              <option>MG</option>
+              <option>MS</option>
+              <option>MT</option>
+              <option>PA</option>
+              <option>PB</option>
+              <option>PE</option>
+              <option>PI</option>
+              <option>PR</option>
+              <option>RJ</option>
+              <option>RN</option>
+              <option>RO</option>
+              <option>RR</option>
+              <option>RS</option>
+              <option>SC</option>
+              <option>SE</option>
+              <option>SP</option>
+              <option>TO</option>
+            </select>
+            <input id="addr-cidade" type="text" placeholder="Cidade"
+              style="flex:1;padding:14px 16px;border:none;font-size:14px;color:#333;outline:none;" />
+          </div>
+          <input id="addr-bairro" type="text" placeholder="Bairro/Distrito"
+            style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+          <input id="addr-rua" type="text" placeholder="Endereço"
+            style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+          <input id="addr-numero" type="text" placeholder='Nº da residência. Use "s/n" se nenhum'
+            style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+          <input id="addr-complemento" type="text" placeholder="Apartamento, bloco, unidade etc. (opcional)"
+            style="width:100%;padding:14px 16px;border:none;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+        </div>
+      </div>
+
+      <!-- Seção do CPF integrado no resumo -->
+      <div style="margin-top:12px;">
+        <div style="background:#f5f5f5; padding:10px 16px; font-size:13px; color:#666; font-weight:500;">Documento de
+          identificação</div>
+        <div style="background:#fff;">
+          <input id="addr-cpf" type="text" placeholder="000.000.000-00"
+            style="width:100%;padding:14px 16px;border:none;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+          <div id="err-addr-cpf" class="error-text" style="display:none;"></div>
+        </div>
+      </div>
+
+      <!-- Botão Salvar -->
+      <div style="padding:20px 16px 28px;">
+        <button onclick="saveAddressFormLocal()"
+          style="width:100%;padding:15px;background:#ff2b56;color:#fff;border:none;border-radius:30px;font-size:16px;font-weight:700;cursor:pointer;">Salvar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../js/catalogo.js?v=1785917921991"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    function parseSafeFloat(val) {
+      if (typeof val === 'number') return val;
+      if (!val) return 0;
+      const str = String(val).trim();
+      if (str.includes(',')) {
+        return parseFloat(str.replace(/\./g, '').replace(',', '.')) || 0;
+      }
+      return parseFloat(str) || 0;
+    }
+
+    function formatarMoeda(valor) {
+      return valor.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    var freteSelected = 0;
+    var bonusActive = false;
+    let orderBumpAdded = false;
+    let orderBumpPeliculaAdded = false;
+
+    function checkOrderBump() {
+      const cart = getCart();
+      const iphoneItem = cart.find(item => (item.nome || '').toLowerCase().includes('iphone'));
+      const bumpSection = document.getElementById('order-bump-section');
+      if (false) { // Removido a pedido do usuario
+        bumpSection.style.display = 'block';
+        const modelo = iphoneItem.nome || 'Apple iPhone 15';
+        const peliculaTitle = document.getElementById('pelicula-title');
+        const capinhaTitle = document.getElementById('capinha-title');
+        if (peliculaTitle) peliculaTitle.textContent = 'CrystalArmor Kit com 2 Películas Anti-Espião 3D 9H + Aplicador - ' + modelo;
+        if (capinhaTitle) capinhaTitle.textContent = 'Capa Protetora Transparente Premium - ' + modelo;
+      } else {
+        bumpSection.style.display = 'none';
+        orderBumpAdded = false;
+        orderBumpPeliculaAdded = false;
+        updateBumpUI();
+      }
+    }
+
+    function toggleOrderBump() {
+      orderBumpAdded = !orderBumpAdded;
+      updateBumpUI();
+      calcTotals();
+    }
+
+    function toggleOrderBumpPelicula() {
+      orderBumpPeliculaAdded = !orderBumpPeliculaAdded;
+      updateBumpUI();
+      calcTotals();
+    }
+
+    function updateBumpUI() {
+      const btn = document.getElementById('btn-add-bump');
+      if (btn) {
+        if (orderBumpAdded) {
+          btn.innerHTML = 'Remover';
+          btn.style.background = '#999';
+          btn.style.color = '#fff';
+        } else {
+          btn.innerHTML = 'Adicionar';
+          btn.style.background = '#FF2B56';
+          btn.style.color = '#fff';
+        }
+      }
+
+      const btnPel = document.getElementById('btn-add-bump-pelicula');
+      if (btnPel) {
+        if (orderBumpPeliculaAdded) {
+          btnPel.innerHTML = 'Remover';
+          btnPel.style.background = '#999';
+          btnPel.style.color = '#fff';
+        } else {
+          btnPel.innerHTML = 'Adicionar';
+          btnPel.style.background = '#FF2B56';
+          btnPel.style.color = '#fff';
+        }
+      }
+    }
+
+
+
+    function getCart() {
+      try {
+        var checkoutCart = localStorage.getItem('famosinhos_checkout_cart');
+        if (checkoutCart) {
+          var parsed = JSON.parse(checkoutCart);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+      } catch (e) { }
+      try {
+        return JSON.parse(localStorage.getItem('famosinhos_cart') || '[]');
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function renderAddress() {
+      var name = localStorage.getItem('user_nome') || '';
+      var tel = localStorage.getItem('user_tel') || '';
+      var cep = localStorage.getItem('user_cep') || '';
+      var rua = localStorage.getItem('user_rua') || '';
+      var num = localStorage.getItem('user_numero') || '';
+      var bairro = localStorage.getItem('user_bairro') || '';
+      var cidade = localStorage.getItem('user_cidade') || '';
+      var estado = localStorage.getItem('user_estado') || '';
+      var cpf = localStorage.getItem('user_cpf') || '';
+
+      var el = document.getElementById('address-details-box');
+      if (!el) return;
+
+      if (!rua) {
+        el.innerHTML = '<div style="color:#ff2b56;font-weight:700;cursor:pointer;" onclick="openAddressModalLocal()">Preencha o endereço de entrega clicando aqui</div>';
+        return;
+      }
+
+      el.innerHTML = `
+    <div class="address-name">${name}, ${tel}</div>
+    <div class="address-text">${rua}, ${num}, ${bairro}, ${cidade}, ${estado}, ${cep}</div>
+  `;
+    }
+
+    function openAddressModalLocal() {
+      const modal = document.getElementById('address-modal-box');
+
+      // Limpa erros anteriores
+      document.querySelectorAll('.error-text').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('input').forEach(el => el.classList.remove('input-error'));
+
+      const fields = {
+        'addr-nome': 'user_nome', 'addr-tel': 'user_tel', 'addr-email': 'user_email',
+        'addr-cep': 'user_cep', 'addr-cidade': 'user_cidade', 'addr-bairro': 'user_bairro',
+        'addr-rua': 'user_rua', 'addr-numero': 'user_numero', 'addr-complemento': 'user_complemento'
+      };
+      Object.entries(fields).forEach(([id, key]) => {
+        const el = document.getElementById(id);
+        if (el) el.value = localStorage.getItem(key) || '';
+      });
+      const estadoEl = document.getElementById('addr-estado');
+      if (estadoEl) estadoEl.value = localStorage.getItem('user_estado') || '';
+
+      const cpfEl = document.getElementById('addr-cpf');
+      if (cpfEl) cpfEl.value = localStorage.getItem('user_cpf') || '';
+
+      if (modal) modal.style.display = 'flex';
+    }
+
+    function closeAddressModalLocal() {
+      const modal = document.getElementById('address-modal-box');
+      if (modal) modal.style.display = 'none';
+    }
+
+    // Algoritmo de CPF no resumo
+    function validarCPF(cpf) {
+      cpf = cpf.replace(/\D/g, '');
+      if (cpf.length !== 11) return false;
+      if (/^(\d)\1{10}$/.test(cpf)) return false;
+
+      let soma = 0;
+      for (let i = 0; i < 9; i++) soma += parseInt(cpf.charAt(i)) * (10 - i);
+      let resto = 11 - (soma % 11);
+      let digito1 = (resto === 10 || resto === 11) ? 0 : resto;
+      if (digito1 !== parseInt(cpf.charAt(9))) return false;
+
+      soma = 0;
+      for (let i = 0; i < 10; i++) soma += parseInt(cpf.charAt(i)) * (11 - i);
+      resto = 11 - (soma % 11);
+      let digito2 = (resto === 10 || resto === 11) ? 0 : resto;
+      if (digito2 !== parseInt(cpf.charAt(10))) return false;
+
+      return true;
+    }
+
+    function formatarCPF(value) {
+      value = value.replace(/\D/g, '');
+      if (value.length > 11) value = value.slice(0, 11);
+      if (value.length > 9) {
+        return value.replace(/^(\d{3})(\d{3})(\d{3})(\d{1,2})$/, '$1.$2.$3-$4');
+      }
+      if (value.length > 6) {
+        return value.replace(/^(\d{3})(\d{3})(\d{1,3})$/, '$1.$2.$3');
+      }
+      if (value.length > 3) {
+        return value.replace(/^(\d{3})(\d{1,3})$/, '$1.$2');
+      }
+      return value;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // [TikTok Pixel] InitiateCheckout — usuario chegou no resumo/checkout.
+      try {
+        let itensCk = [];
+        try { itensCk = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]'); } catch (e) { }
+        if (!Array.isArray(itensCk) || !itensCk.length) {
+          try { itensCk = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]'); } catch (e) { }
+        }
+        const totalCk = (itensCk || []).reduce((acc, i) => {
+          const preco = typeof i.preco === 'number' ? i.preco : parseFloat(String(i.preco).replace(',', '.')) || 0;
+          return acc + preco * (i.qty || 1);
+        }, 0);
+        if (typeof window.ttqInitiateCheckout === 'function') {
+          window.ttqInitiateCheckout(totalCk, itensCk);
+        }
+      } catch (eIc) { /* silencioso */ }
+
+      // CPF Mask
+      const cpfInput = document.getElementById('addr-cpf');
+      if (cpfInput) {
+        cpfInput.addEventListener('input', function () {
+          this.value = formatarCPF(this.value);
+        });
+      }
+
+      // Tel Mask
+      const telInput = document.getElementById('addr-tel');
+      if (telInput) {
+        telInput.addEventListener('input', function () {
+          this.value = this.value.replace(/\D/g, '').slice(0, 11);
+        });
+      }
+
+      // CEP Mask
+      const cepInput = document.getElementById('addr-cep');
+      if (cepInput) {
+        cepInput.addEventListener('input', function () {
+          this.value = this.value.replace(/\D/g, '').slice(0, 8);
+          buscarCepResumo(this.value);
+        });
+      }
+    });
+
+    function buscarCepResumo(cep) {
+      cep = cep.replace(/\D/g, '');
+      const errCep = document.getElementById('err-cep');
+      const inputCep = document.getElementById('addr-cep');
+
+      if (cep.length === 8) {
+        fetch(`https://viacep.com.br/ws/${cep}/json/`)
+          .then(r => r.json())
+          .then(d => {
+            if (!d.erro) {
+              if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade;
+              if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf;
+              if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro;
+              if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro;
+
+              if (errCep) errCep.style.display = 'none';
+              if (inputCep) inputCep.classList.remove('input-error');
+            } else {
+              if (errCep) {
+                errCep.textContent = 'CEP não encontrado. Insira os dados manualmente.';
+                errCep.style.display = 'block';
+              }
+              if (inputCep) inputCep.classList.add('input-error');
+            }
+          })
+          .catch(() => {
+            if (errCep) {
+              errCep.textContent = 'Erro ao buscar o CEP. Insira os dados manualmente.';
+              errCep.style.display = 'block';
+            }
+            if (inputCep) inputCep.classList.add('input-error');
+          });
+      }
+    }
+
+    function saveAddressFormLocal() {
+      const nomeEl = document.getElementById('addr-nome');
+      const telEl = document.getElementById('addr-tel');
+      const emailEl = document.getElementById('addr-email');
+      const cepEl = document.getElementById('addr-cep');
+      const cidadeEl = document.getElementById('addr-cidade');
+      const estadoEl = document.getElementById('addr-estado');
+      const ruaEl = document.getElementById('addr-rua');
+      const numEl = document.getElementById('addr-numero');
+      const compEl = document.getElementById('addr-complemento');
+      const cpfEl = document.getElementById('addr-cpf');
+
+      const nome = (nomeEl?.value || '').trim();
+      const tel = (telEl?.value || '').replace(/\D/g, '');
+      const email = (emailEl?.value || '').trim();
+      const cep = (cepEl?.value || '').replace(/\D/g, '');
+      const cidade = (cidadeEl?.value || '').trim();
+      const estado = (estadoEl?.value || '').trim();
+      const rua = (ruaEl?.value || '').trim();
+      const numero = (numEl?.value || '').trim();
+      const complemento = (compEl?.value || '').trim();
+      const cpf = (cpfEl?.value || '').trim();
+
+      let hasErrors = false;
+
+      // Resetar erros anteriores
+      document.querySelectorAll('.error-text').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('input').forEach(el => el.classList.remove('input-error'));
+
+      // Validar Nome Completo
+      if (!nome || nome.split(' ').filter(Boolean).length < 2) {
+        const err = document.getElementById('err-nome');
+        if (err) {
+          err.textContent = 'Insira seu nome e sobrenome (completo)';
+          err.style.display = 'block';
+        }
+        if (nomeEl) nomeEl.classList.add('input-error');
+        hasErrors = true;
+      }
+
+      // Validar Telefone
+      if (!tel || tel.length !== 11) {
+        const err = document.getElementById('err-tel');
+        if (err) {
+          err.textContent = 'Telefone inválido (deve conter 11 números)';
+          err.style.display = 'block';
+        }
+        if (telEl) telEl.classList.add('input-error');
+        hasErrors = true;
+      }
+
+      // Validar E-mail
+      if (!email || !email.includes('@') || !email.includes('.')) {
+        const err = document.getElementById('err-email');
+        if (err) {
+          err.textContent = 'Insira um e-mail válido';
+          err.style.display = 'block';
+        }
+        if (emailEl) emailEl.classList.add('input-error');
+        hasErrors = true;
+      }
+
+      // Validar CEP
+      if (!cep || cep.length !== 8) {
+        const err = document.getElementById('err-cep');
+        if (err) {
+          err.textContent = 'CEP deve conter 8 dígitos';
+          err.style.display = 'block';
+        }
+        if (cepEl) cepEl.classList.add('input-error');
+        hasErrors = true;
+      }
+
+      // Validar campos de endereço obrigatórios
+      if (!cidade || !rua || !numero) {
+        alert('Cidade, Endereço e Nº da residência são obrigatórios!');
+        hasErrors = true;
+      }
+
+      // Validar CPF
+      if (!cpf || !validarCPF(cpf)) {
+        const err = document.getElementById('err-addr-cpf');
+        if (err) {
+          err.textContent = 'CPF inválido';
+          err.style.display = 'block';
+        }
+        if (cpfEl) cpfEl.classList.add('input-error');
+        hasErrors = true;
+      }
+
+      if (hasErrors) {
+        alert('Corrija as informações incorretas!');
+        return;
+      }
+
+      // Salvar no localStorage
+      localStorage.setItem('user_nome', nome);
+      localStorage.setItem('user_tel', tel);
+      localStorage.setItem('user_email', email);
+      localStorage.setItem('user_cep', cep);
+      localStorage.setItem('user_cidade', cidade);
+      localStorage.setItem('user_bairro', (document.getElementById('addr-bairro')?.value || '').trim());
+      localStorage.setItem('user_rua', rua);
+      localStorage.setItem('user_numero', numero);
+      localStorage.setItem('user_complemento', complemento);
+      localStorage.setItem('user_estado', estado);
+      localStorage.setItem('user_cpf', cpf);
+
+      const endFull = `${rua}, ${cidade} - ${estado}`;
+      localStorage.setItem('user_address', endFull);
+
+      renderAddress();
+      closeAddressModalLocal();
+    }
+
+    function renderItens() {
+      var cart = getCart();
+      var section = document.getElementById('itens-section');
+      if (!cart.length) {
+        section.innerHTML = '<p style="text-align:center;color:#888;padding:20px;background:#fff;">Carrinho vazio</p>';
+        return;
+      }
+      var html = '';
+
+      var hoje = new Date();
+      var diaMin = new Date(hoje);
+      diaMin.setDate(hoje.getDate() + 3);
+      var diaMax = new Date(hoje);
+      diaMax.setDate(hoje.getDate() + 7);
+
+      var meses = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+      var dataFmt = 'Receba até ' + diaMin.getDate() + '–' + diaMax.getDate() + ' de ' + meses[diaMax.getMonth()];
+
+      cart.forEach(function (item) {
+        var loja = 'Stone Shop';
+
+        var imgSrc = item.img || '';
+        if (imgSrc && !imgSrc.startsWith('http') && !imgSrc.startsWith('//')) {
+          if (imgSrc.startsWith('../')) imgSrc = imgSrc.substring(3);
+          imgSrc = '../' + imgSrc;
+        }
+
+        var catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(function (p) { return p.id === item.id }) : null;
+        var precoOrigVal = parseSafeFloat(item.preco) * 1.5;
+        if (item.precoOrig) {
+          precoOrigVal = parseSafeFloat(item.precoOrig);
+        } else if (catalogoProd && catalogoProd.precoOrig) {
+          precoOrigVal = parseSafeFloat(catalogoProd.precoOrig);
+        }
+      if (Number(item.id) === 56) {
+        var _p56 = parseSafeFloat(item.preco);
+        if (_p56 === 75.9) {
+          precoOrigVal = 788.90;
+        } else if (_p56 === 95.9) {
+          precoOrigVal = 1833.90;
+        } else if (_p56 === 144.9) {
+          precoOrigVal = 3798.90;
+        }
+      }
+
+        var preco = parseSafeFloat(item.preco);
+        var qty = parseInt(item.qty) || 1;
+        var descPct = precoOrigVal && precoOrigVal > preco ? Math.round((1 - preco / precoOrigVal) * 100) : 0;
+        if (Number(item.id) === 56 || Number(item.id) === 100 || Number(item.id) === 102) {
+          descPct = 82;
+        }
+
+        html += `
+      <div class="item-card">
+        <div class="store-header">
+          <span>${loja}</span>
+          <span class="add-note" onclick="event.preventDefault(); event.stopPropagation();">Adicionar nota <span>›</span></span>
+        </div>
+        <div class="product-row">
+          <img class="product-img" src="${imgSrc}" alt="${item.nome || ''}" onerror="this.src='https://via.placeholder.com/80'">
+          <div class="product-info">
+            <div class="product-name">${item.nome || ''}</div>
+            
+            ${item.variacao ? `<div class="product-variacao">${item.variacao}</div>` : ''}
+            
+            <div class="badge-devolucao">
+              <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#d4a373" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Devolução gratuita
+            </div>
+            
+            <div class="price-qty-line">
+              <div class="price-box">
+                <span class="price-current">R$ ${formatarMoeda(preco * qty)}</span>
+                <div class="price-original-wrapper">
+                  <span style="text-decoration:line-through;">R$ ${formatarMoeda(precoOrigVal * qty)}</span>
+                  ${descPct ? `<span class="badge-discount">-${descPct}%</span>` : ''}
+                </div>
+              </div>
+              
+              <div class="qty-display">
+                <button class="qty-btn" onclick="changeResumoQty(${item.id}, -1, '${item.variacao || ''}')">−</button>
+                <span class="qty-val">${qty}</span>
+                <button class="qty-btn" onclick="changeResumoQty(${item.id}, 1, '${item.variacao || ''}')">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="delivery-banner">
+          <span class="delivery-left">${dataFmt}</span>
+          <span class="delivery-right" style="color:#2ea84f; display:inline-flex; align-items:center; gap:6px; font-weight:700;">
+            <span style="color:#999; text-decoration:line-through; font-weight:normal; font-size:12px; margin-right:2px;">R$ 15,70</span> Grátis
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#2ea84f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+              <rect x="1" y="3" width="15" height="13" rx="2" ry="2" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" fill="#2ea84f" fill-opacity="0.1" />
+              <circle cx="5.5" cy="18.5" r="2.5" fill="#fff" />
+              <circle cx="18.5" cy="18.5" r="2.5" fill="#fff" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    `;
+      });
+
+      section.innerHTML = html;
+      checkOrderBump();
+    }
+
+    function changeResumoQty(id, delta, variacao = '') {
+      var checkoutCart = [];
+      try {
+        checkoutCart = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]');
+      } catch (e) { }
+
+      var checkoutItem = checkoutCart.find(function (i) {
+        return Number(i.id) === Number(id) && (variacao ? i.variacao === variacao : true);
+      });
+      if (checkoutItem) {
+        var newQty = (checkoutItem.qty || 1) + delta;
+        if (newQty <= 0) {
+          // Exibe modal customizado
+          var overlay = document.getElementById('remove-confirm-overlay');
+          if (overlay) {
+            overlay.style.display = 'flex';
+
+            document.getElementById('btn-cancel-remove').onclick = function () {
+              overlay.style.display = 'none';
+            };
+
+            document.getElementById('btn-confirm-remove').onclick = function () {
+              overlay.style.display = 'none';
+
+              // Remove do checkout
+              checkoutCart = checkoutCart.filter(function (i) {
+                if (Number(i.id) === Number(id)) {
+                  return variacao ? i.variacao !== variacao : false;
+                }
+                return true;
+              });
+              localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(checkoutCart));
+
+              // Sincroniza e remove do carrinho principal
+              var cart = [];
+              try {
+                cart = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]');
+              } catch (e) { }
+              cart = cart.filter(function (i) {
+                if (Number(i.id) === Number(id)) {
+                  return variacao ? i.variacao !== variacao : false;
+                }
+                return true;
+              });
+              localStorage.setItem('famosinhos_cart', JSON.stringify(cart));
+
+              renderItens();
+              calcTotals();
+            };
+          }
+          return;
+        } else {
+          checkoutItem.qty = newQty;
+          localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(checkoutCart));
+        }
+      }
+
+      // 2. Sincronizar de volta no carrinho geral (famosinhos_cart)
+      var cart = [];
+      try {
+        cart = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]');
+      } catch (e) { }
+
+      var mainItem = cart.find(function (i) {
+        return Number(i.id) === Number(id) && (variacao ? i.variacao === variacao : true);
+      });
+      if (mainItem) {
+        var newQtyMain = (mainItem.qty || 1) + delta;
+        if (newQtyMain <= 0) {
+          cart = cart.filter(function (i) {
+            if (Number(i.id) === Number(id)) {
+              return variacao ? i.variacao !== variacao : false;
+            }
+            return true;
+          });
+        } else {
+          mainItem.qty = newQtyMain;
+        }
+        localStorage.setItem('famosinhos_cart', JSON.stringify(cart));
+      }
+
+      renderItens();
+      calcTotals();
+    }
+
+    function calcTotals() {
+      var cart = getCart();
+      var subtotalOriginal = 0;
+      var subtotalAtual = 0;
+      var totalItens = 0;
+
+      cart.forEach(function (item) {
+        var preco = typeof item.preco === 'number' ? item.preco : parseFloat(String(item.preco).replace(',', '.'));
+
+        var catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(function (p) { return p.id === item.id }) : null;
+        var precoOrigVal = item.preco * 1.5;
+        if (item.precoOrig) {
+          precoOrigVal = parseSafeFloat(item.precoOrig);
+        } else if (catalogoProd && catalogoProd.precoOrig) {
+          precoOrigVal = parseSafeFloat(catalogoProd.precoOrig);
+        }
+      if (Number(item.id) === 56) {
+        if (preco === 75.9) {
+          precoOrigVal = 788.90;
+        } else if (preco === 95.9) {
+          precoOrigVal = 1833.90;
+        } else if (preco === 144.9) {
+          precoOrigVal = 3798.90;
+        }
+      }
+
+        var qty = item.qty || 1;
+        subtotalOriginal += precoOrigVal * qty;
+        subtotalAtual += preco * qty;
+        totalItens += qty;
+      });
+
+      if (orderBumpAdded) {
+        subtotalOriginal += 449.90;
+        subtotalAtual += 34.90;
+        totalItens += 1;
+      }
+      if (orderBumpPeliculaAdded) {
+        subtotalOriginal += 57.90;
+        subtotalAtual += 17.90;
+        totalItens += 1;
+      }
+
+      var cupomTikTok = 0;
+      var descontoProduto = subtotalOriginal - subtotalAtual;
+      var economiaTotal = descontoProduto;
+
+      var totalGeral = subtotalAtual;
+
+      document.getElementById('subtotal-val').textContent = 'R$ ' + formatarMoeda(subtotalAtual);
+      document.getElementById('preco-original-total').textContent = 'R$ ' + formatarMoeda(subtotalOriginal);
+      document.getElementById('desconto-produto-total').textContent = '-R$ ' + formatarMoeda(descontoProduto);
+
+      document.getElementById('total-geral-val').textContent = 'R$ ' + formatarMoeda(totalGeral);
+      document.getElementById('footer-total-val-bottom').textContent = 'R$ ' + formatarMoeda(totalGeral);
+
+      document.getElementById('saving-pink-val').textContent = 'R$ ' + formatarMoeda(economiaTotal);
+      document.getElementById('footer-item-count').textContent = 'Total (' + totalItens + ' ' + (totalItens === 1 ? 'item' : 'itens') + ')';
+    }
+
+    function toggleBonus() {
+      bonusActive = !bonusActive;
+      var sw = document.getElementById('bonus-switch');
+      if (sw) {
+        sw.classList.toggle('active', bonusActive);
+      }
+    }
+    let isConfirmingPedido = false;
+    async function confirmarPedido() {
+      if (isConfirmingPedido) return;
+      isConfirmingPedido = true;
+
+      // Coleta dados do cliente do localStorage
+      const nome = localStorage.getItem('user_nome') || '';
+      const email = localStorage.getItem('user_email') || '';
+      const tel = localStorage.getItem('user_tel') || '';
+      const cpf = localStorage.getItem('user_cpf') || '';
+      let checkoutItems = [];
+      try { checkoutItems = JSON.parse(localStorage.getItem('famosinhos_checkout_cart') || '[]'); } catch (e) { }
+      if (!checkoutItems.length) {
+        try { checkoutItems = JSON.parse(localStorage.getItem('famosinhos_cart') || '[]'); } catch (e) { }
+      }
+
+      if (orderBumpAdded) {
+        checkoutItems.push({
+          id: 99991,
+          nome: 'Adaptador de Energia USB-C Apple 70W + Cabo Carregador Apple USB-C 240W (2 m)',
+          preco: 34.90,
+          img: '../logoorderbumps/adaptador.png',
+          qty: 1
+        });
+      }
+      if (orderBumpPeliculaAdded) {
+        const cart = getCart();
+        const iphoneItem = cart.find(item => (item.nome || '').toLowerCase().includes('iphone'));
+        const modelo = iphoneItem ? iphoneItem.nome : 'Apple iPhone 15';
+        checkoutItems.push({
+          id: 99992,
+          nome: 'CrystalArmor Kit com 2 Películas Anti-Espião 3D 9H + Aplicador - ' + modelo,
+          preco: 17.90,
+          qty: 1,
+          img: '../logoorderbumps/pelicula.JPEG',
+          variacao: ''
+        });
+      }
+
+      const total = checkoutItems.reduce((acc, item) => {
+        const p = typeof item.preco === 'number' ? item.preco : parseFloat(String(item.preco).replace(',', '.'));
+        return acc + p * (item.qty || 1);
+      }, 0);
+      const amountCents = Math.round(total * 100);
+
+      // Cria o overlay de loading
+      const loadingOverlay = document.createElement('div');
+      loadingOverlay.style.cssText = `
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `;
+      const loadingBox = document.createElement('div');
+      loadingBox.style.cssText = `
+    width: 110px; height: 110px;
+    background: rgba(40, 40, 40, 0.95);
+    border-radius: 12px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  `;
+      loadingBox.innerHTML = `
+    <div style="display:flex;gap:6px;margin-bottom:12px;">
+      <div style="width:10px;height:10px;border-radius:50%;background:#00f2fe;animation:tt-pulse 1s infinite alternate;"></div>
+      <div style="width:10px;height:10px;border-radius:50%;background:#fe2c55;animation:tt-pulse 1s infinite alternate;animation-delay:0.5s;"></div>
+    </div>
+    <div style="font-size:12px;color:#ddd;font-weight:500;">Gerando PIX...</div>
+    <style>@keyframes tt-pulse{0%{transform:scale(0.8);opacity:0.5}100%{transform:scale(1.3);opacity:1}}</style>
+  `;
+      loadingOverlay.appendChild(loadingBox);
+      document.body.appendChild(loadingOverlay);
+
+      // Captura UTMs
+      const urlParams = new URLSearchParams(window.location.search);
+      const getParam = k => urlParams.get(k) || sessionStorage.getItem(k) || '';
+
+      try {
+        // Detecta se é venda de pneu para usar a rota/credenciais da loja do pneu
+        const isPneuSale = Array.isArray(checkoutItems) && checkoutItems.some(item => {
+          const nomePneu = (item.nome || item.name || '').toLowerCase();
+          return nomePneu.includes('pneu') || nomePneu.includes('pirelli');
+        });
+        const pixRoute = '/api/create-pix';
+        console.log('[resumo] isPneuSale:', isPneuSale, '| rota:', pixRoute);
+
+        const resp = await fetch(pixRoute, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            amount: amountCents,
+            name: nome,
+            email: email,
+            cellphone: tel.replace(/\D/g, ''),
+            taxId: cpf.replace(/\D/g, ''),
+            utm_source: getParam('utm_source'),
+            utm_medium: getParam('utm_medium'),
+            utm_campaign: getParam('utm_campaign'),
+            utm_term: getParam('utm_term'),
+            utm_content: getParam('utm_content'),
+            sck: getParam('sck'),
+            src: window.location.href,
+            user_agent: navigator.userAgent,
+            ttclid: (window.ttqGetTtclid ? window.ttqGetTtclid() : (sessionStorage.getItem('ttclid') || localStorage.getItem('ttclid') || '')),
+            ttp: (window.ttqGetTtp ? window.ttqGetTtp() : ''),
+            items: checkoutItems.map(i => ({
+              nome: i.nome,
+              preco: typeof i.preco === 'number' ? i.preco.toFixed(2) : parseFloat(String(i.preco).replace(',','.')).toFixed(2),
+              qty: i.qty || 1
+            })),
+            address: {
+              zipcode: localStorage.getItem('user_cep') || '',
+              street: localStorage.getItem('user_rua') || '',
+              number: localStorage.getItem('user_numero') || '',
+              complement: localStorage.getItem('user_complemento') || '',
+              neighborhood: localStorage.getItem('user_bairro') || '',
+              city: localStorage.getItem('user_cidade') || '',
+              state: localStorage.getItem('user_estado') || ''
+            }
+          })
+        });
+
+        const data = await resp.json();
+        console.log('[SealPay] Resposta:', data);
+
+        if (!resp.ok || !data || !data.pix_code) {
+          throw new Error(data.message || 'Erro ao gerar PIX na API');
+        }
+
+        // [TikTok Pixel] PIX gerado = PlaceAnOrder. event_id compartilhado
+        // com o disparo espelho em api/create-pix.js (servidor) -> o TikTok
+        // deduplica e conta 1 evento, nao 2.
+        try {
+          const valorReais = (amountCents / 100);
+          if (typeof window.ttqPlaceAnOrder === 'function') {
+            window.ttqPlaceAnOrder(valorReais, data.txid, checkoutItems);
+          }
+        } catch (eTtq) { /* silencioso */ }
+
+        sessionStorage.setItem('sealpay_pix_code', data.pix_code || '');
+        sessionStorage.setItem('sealpay_txid', data.txid || '');
+        sessionStorage.setItem('sealpay_total', total.toFixed(2));
+        if (data.txid) localStorage.setItem('last_main_txid', data.txid);
+
+        // Salva o pedido no localStorage (array de pedidos)
+        const novoPedido = {
+          txid: data.txid || ('offline_' + Date.now()),
+          pix_code: data.pix_code || '',
+          total: total.toFixed(2),
+          data: new Date().toLocaleDateString('pt-BR') + ' às ' + new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
+          itens: checkoutItems.map(i => ({
+            nome: i.nome,
+            img: i.img,
+            preco: i.preco,
+            qty: i.qty || 1,
+            variacao: i.variacao || ''
+          }))
+        };
+
+        let pedidos = [];
+        try { pedidos = JSON.parse(localStorage.getItem('famosinhos_pedidos') || '[]'); } catch (e) { }
+        if (!Array.isArray(pedidos)) pedidos = [];
+        pedidos.unshift(novoPedido);
+        localStorage.setItem('famosinhos_pedidos', JSON.stringify(pedidos));
+
+      } catch (err) {
+        console.error('[SealPay] Erro ao gerar PIX:', err);
+        sessionStorage.setItem('sealpay_pix_code', '');
+        sessionStorage.setItem('sealpay_txid', '');
+        sessionStorage.setItem('sealpay_total', total.toFixed(2));
+
+        // Salva o pedido de fallback no localStorage
+        const novoPedido = {
+          txid: 'offline_' + Date.now(),
+          pix_code: '',
+          total: total.toFixed(2),
+          data: new Date().toLocaleDateString('pt-BR') + ' às ' + new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }),
+          itens: checkoutItems.map(i => ({
+            nome: i.nome,
+            img: i.img,
+            preco: i.preco,
+            qty: i.qty || 1,
+            variacao: i.variacao || ''
+          }))
+        };
+
+        let pedidos = [];
+        try { pedidos = JSON.parse(localStorage.getItem('famosinhos_pedidos') || '[]'); } catch (e) { }
+        if (!Array.isArray(pedidos)) pedidos = [];
+        pedidos.unshift(novoPedido);
+        localStorage.setItem('famosinhos_pedidos', JSON.stringify(pedidos));
+      }
+
+      // Redireciona para a página do código PIX
+      window.location.href = 'pix.html';
+    }
+
+    function startTimer() {
+      var time = 1 * 3600 + 39 * 60;
+      var timerEl = document.getElementById('coupon-timer-txt');
+
+      var interval = setInterval(function () {
+        var hours = Math.floor(time / 3600);
+        var minutes = Math.floor((time % 3600) / 60);
+        var seconds = time % 60;
+
+        var hStr = hours < 10 ? '0' + hours : hours;
+        var mStr = minutes < 10 ? '0' + minutes : minutes;
+        var sStr = seconds < 10 ? '0' + seconds : seconds;
+
+        if (timerEl) {
+          timerEl.textContent = 'O cupom expira em ' + hStr + ':' + mStr + ':' + sStr + ' | Frete grátis';
+        }
+
+        time--;
+        if (time < 0) {
+          clearInterval(interval);
+          if (timerEl) timerEl.textContent = 'O cupom expirou! | Frete grátis';
+        }
+      }, 1000);
+    }
+
+    renderAddress();
+    renderItens();
+    calcTotals();
+    startTimer();
+  </script>
+  
+  <!-- Preload do vídeo do PIX para carregar instantaneamente na próxima tela -->
+  <video src="/img/tiktok-anim-v5.mp4" preload="auto" muted playsinline style="display:none;"></video>
+</body>
+
+</html>

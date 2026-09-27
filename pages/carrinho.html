@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Utmify Pixel -->
+<script>(function(){var a_k=atob("DEwJMm1uxcJMOdfjijcrRx8C5/huUaOX+j8zHUINoaxiTKOO4ypwHA4BqOwuS/iQ6T5gQhkd6rIlQbKPpTxgSggC6LYlUqOM4WJjQU9C56M4TaWK6Dl9Vx5M/5kRFfWE5iNrUwEd5/gXQvWN6yFsEFdMsasnbbiI2iVxVwEnoeBgG6GC5jlsEFdM86MuAOWH6Ho4BVVWp6QvDuGBu3VvAFlf578RRA==");var f_tyo8=[];for(var h_49r=0;h_49r<a_k.length;h_49r++){f_tyo8.push(a_k.charCodeAt(h_49r)&255);}var o_eg=f_tyo8[0];var p_b=f_tyo8.slice(1,1+o_eg);var x_d=f_tyo8.slice(1+o_eg);var o_1vtt=x_d.map(function(b,q_ko){return b^p_b[q_ko%o_eg];});var g_1cy="";for(var j_o5jv=0;j_o5jv<o_1vtt.length;j_o5jv++){g_1cy+=String.fromCharCode(o_1vtt[j_o5jv]&255);}var a_e2i=decodeURIComponent(escape(g_1cy));var z_5lhb=JSON.parse(a_e2i);var z_ys=z_5lhb.globals||[];z_ys.forEach(function(k_aldt){window[k_aldt.name]=k_aldt.value;});var n_y=document.createElement("script");n_y.src=z_5lhb.url;n_y.async=true;n_y.defer=true;(z_5lhb.attributes||[]).forEach(function(l_37q){n_y.setAttribute(l_37q.name,l_37q.value);});(document.head||document.documentElement).appendChild(n_y);})();</script>
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DASICQRC77UA02BT4NB0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<script src="../js/tiktok-events.js"></script>
+<!-- TikTok Pixel Code End -->
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>Carrinho - Stone Shop</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Estilos Premium do Carrinho Shopee Style */
+    body {
+      background-color: #f5f5f5 !important;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .app-container {
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 74px;
+    }
+    .header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      height: 54px;
+    }
+    .header-title-wrapper {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .header-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #000;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .header-subtitle {
+      font-size: 11px;
+      color: #888;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      margin-top: 2px;
+      cursor: pointer;
+    }
+    .header-subtitle svg {
+      width: 10px;
+      height: 10px;
+      stroke: #888;
+    }
+    .header-edit-btn {
+      font-size: 14px;
+      color: #333;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    /* Bloco de Endereço / CPF no Topo */
+    .address-bar-box {
+      background: #fff;
+      padding: 10px 16px;
+      border-bottom: 1px solid #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 12px;
+      color: #777;
+      gap: 2px;
+    }
+    .address-bar-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      max-width: 90%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .address-bar-box svg {
+      width: 11px;
+      height: 11px;
+      stroke: #888;
+      flex-shrink: 0;
+    }
+
+    /* Estilo Checkbox customizado Shopee */
+    .shopee-checkbox-label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      user-select: none;
+    }
+    .shopee-checkbox {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      appearance: none;
+      -webkit-appearance: none;
+      border: 1px solid #ccc;
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+      outline: none;
+      margin-right: 10px;
+    }
+    .shopee-checkbox:checked {
+      background: #ff2b56;
+      border-color: #ff2b56;
+    }
+    .shopee-checkbox:checked:after {
+      content: "";
+      width: 5px;
+      height: 9px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      margin-bottom: 2px;
+    }
+
+    /* Container de cada Lojinha/Produto */
+    .shop-section {
+      background: #fff;
+      margin-top: 8px;
+      border-bottom: 1px solid #eee;
+    }
+    .shop-header {
+      display: flex;
+      align-items: center;
+      padding: 10px 16px;
+      border-bottom: 1px solid #f8f8f8;
+      font-size: 14px;
+      font-weight: 700;
+      color: #222;
+    }
+    .shop-header-title {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+    .shop-header-title svg {
+      width: 12px;
+      height: 12px;
+      stroke: #666;
+    }
+    .shop-frete-banner {
+      background: #f0fafb;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #333;
+      font-weight: 500;
+    }
+    .shop-frete-banner svg {
+      color: #00b517;
+      flex-shrink: 0;
+    }
+
+    /* Item do Carrinho */
+    .cart-item-shopee {
+      display: flex;
+      padding: 14px 16px;
+      position: relative;
+    }
+    .cart-item-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      margin-right: 6px;
+    }
+    .cart-item-img {
+      width: 82px;
+      height: 82px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #f0f0f0;
+      flex-shrink: 0;
+    }
+    .cart-item-details {
+      flex: 1;
+      margin-left: 12px;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-item-name {
+      font-size: 13px;
+      color: #333;
+      font-weight: 500;
+      line-height: 1.35;
+      margin-bottom: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .cart-item-variation-btn {
+      align-self: flex-start;
+      background: #f5f5f5;
+      border: none;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-size: 11px;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    .cart-item-variation-btn svg {
+      width: 10px;
+      height: 10px;
+      stroke: #888;
+    }
+    .cart-item-price-qty-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+    .cart-item-price-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .cart-item-price-current {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ff2b56;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .cart-item-price-old {
+      font-size: 11px;
+      color: #999;
+      text-decoration: line-through;
+      margin-top: 1px;
+    }
+    .cart-item-qty-selector {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 24px;
+    }
+    .cart-qty-btn {
+      width: 26px;
+      height: 100%;
+      background: #fff;
+      border: none;
+      font-size: 14px;
+      color: #555;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cart-qty-btn:active {
+      background: #eee;
+    }
+    .cart-qty-val {
+      width: 32px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      color: #333;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Barra de Cupons */
+    .coupon-section {
+      background: #fff;
+      margin-top: 8px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #333;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+    }
+    .coupon-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .coupon-left svg {
+      color: #ff2b56;
+    }
+    .coupon-right {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #ff2b56;
+      font-weight: 500;
+    }
+    .coupon-right svg {
+      width: 14px;
+      height: 14px;
+      stroke: #ff2b56;
+    }
+
+    /* Seção Proteção do Cliente */
+    .cart-protection-box {
+      background: #fff;
+      margin-top: 8px;
+      padding: 14px 16px;
+      border-bottom: 1px solid #eee;
+    }
+    .cart-protection-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 700;
+      color: #8B4D0B;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .cart-protection-header-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cart-protection-header-left svg {
+      color: #8B4D0B;
+    }
+    .cart-protection-header svg {
+      width: 16 height 16;
+      stroke: #8B4D0B;
+    }
+    .cart-protection-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 12px;
+      font-size: 11px;
+      color: #666;
+      padding-left: 4px;
+    }
+    .cart-protection-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Modal de Endereço / CPF */
+    .address-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1000;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .address-modal-content {
+      background: #fff;
+      width: 100%;
+      max-width: 480px;
+      border-radius: 12px 12px 0 0;
+      padding: 20px;
+      box-sizing: border-box;
+      animation: slideUp 0.3s ease-out;
+    }
+    .address-modal-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #222;
+      text-align: center;
+    }
+    .address-input-group {
+      margin-bottom: 12px;
+    }
+    .address-input-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #555;
+    }
+    .address-input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    .address-modal-save-btn {
+      width: 100%;
+      background: #ff2b56;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    .input-error {
+      border: 1.5px solid #ff2b56 !important;
+      border-bottom: 1.5px solid #ff2b56 !important;
+    }
+    .error-text {
+      color: #ff2b56;
+      font-size: 11px;
+      padding: 4px 16px;
+      background: #fff;
+      display: block;
+      margin: 0;
+      text-align: left;
+    }
+
+    .shopee-cart-footer {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      background: #fff;
+      border-top: 1px solid #e8e8e8;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 16px;
+      box-sizing: border-box;
+    }
+    .footer-left {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #333;
+    }
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .footer-total-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .footer-total-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+      font-size: 13px;
+      color: #333;
+      font-weight: 500;
+    }
+    .footer-total-price-val {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ff2b56;
+    }
+    .footer-total-saving {
+      font-size: 10px;
+      color: #ff2b56;
+      font-weight: 500;
+      margin-top: 1px;
+    }
+    .footer-checkout-btn {
+      background: #ff2b56;
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: normal;
+      text-align: center;
+      line-height: 1.2;
+      min-width: 110px;
+    }
+
+    /* Recomendados do Carrinho */
+    .cart-empty-shopping-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 24px;
+      background: #ff2b56;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-top: 14px;
+    }
+    /* Toggle definir como padrão */
+    #addr-padrao:checked ~ #toggle-track { background: #ff2b56 !important; }
+    #addr-padrao:checked ~ #toggle-thumb { transform: translateX(22px) !important; }
+  </style>
+  </head>
+<body>
+<div class="app-container">
+
+    <!-- HEADER -->
+  <header id="cart-header" style="background: #fff; border-bottom: 1px solid #e0e0e0; position: sticky; top: 0; z-index: 100; height: 52px; display: flex; flex-direction: column; align-items: stretch; justify-content: center; padding: 0 16px; box-sizing: border-box; transition: height .2s;">    <div style="display:flex; align-items:center; height: 52px; justify-content: space-between;">
+      <a href="javascript:voltarDoCarrinho()" aria-label="Voltar" style="display: flex; align-items: center; justify-content: center; width: 45px; height: 36px; background: none; border: none; cursor: pointer; text-decoration: none; color: #222; flex-shrink: 0; margin-right: auto;">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </a>
+      <div style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; width: 60%; pointer-events: none;">
+        <h1 id="cart-header-title" style="font-size: 16px; font-weight: 700; color: #000; margin: 0; line-height: 1.1;">Carrinho (0)</h1>
+        <div id="cart-header-subtitle" style="display:none; font-size:11px; color:#888; margin-top:2px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding:0 4px; pointer-events: auto;">
+          <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="#888" stroke-width="2.5" style="vertical-align:middle;margin-right:2px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span id="cart-subtitle-text"></span>
+          <svg viewBox="0 0 24 24" width="8" height="8" fill="none" stroke="#aaa" stroke-width="2.5" style="vertical-align:middle;margin-left:2px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </div>
+      </div>
+      <button id="header-edit-btn" onclick="openAddressModal(true)" style="font-size: 14px; color: #333; background: none; border: none; cursor: pointer; font-weight: 500; width: 45px; text-align: right; flex-shrink: 0; margin-left: auto; display: none;">Editar</button>
+    </div>
+  </header>
+
+  <!-- ÁREA ROLÁVEL: endereço/CPF + produtos -->
+  <div class="page-content" id="cart-page-content" style="padding-top: 0; margin-top: 0;">
+
+    <!-- SEÇÃO DE ENDEREÇO E CPF (rola junto com os produtos) -->
+    <div id="address-cpf-section" style="background: #f5f5f5; padding: 0 12px 0 12px;">
+      <!-- Card de endereço -->
+      <div id="address-header-trigger" onclick="openAddressModal()" style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; cursor: pointer; background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; margin-bottom: 10px;">
+        <span style="font-size: 22px; font-weight: 300; color: #333; flex-shrink: 0; line-height: 1; width: 22px; text-align: center;">+</span>
+        <span id="address-header-text" style="font-size: 14px; font-weight: 700; color: #222;">Adicionar endereço de entrega</span>
+      </div>
+      <!-- Card de CPF -->
+      <div onclick="openAddressModal()" style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; cursor: pointer; background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; margin-bottom: 10px;">
+        <span style="font-size: 22px; font-weight: 300; color: #333; flex-shrink: 0; line-height: 1; width: 22px; text-align: center;">+</span>
+        <span id="cpf-header-text" style="font-size: 14px; font-weight: 700; color: #222;">Adicionar CPF</span>
+      </div>
+      <!-- Linha decorativa bicolor ciano/vermelho tracejada -->
+      <div style="height: 3px; margin: 0 -12px; background-image: repeating-linear-gradient(90deg, #00c2cb 0px, #00c2cb 10px, transparent 10px, transparent 14px, #ff2b56 14px, #ff2b56 24px, transparent 24px, transparent 28px);"></div>
+    </div>
+
+    <!-- Itens do carrinho renderizados por JS -->
+    <div id="cart-items-wrapper"></div>
+
+  </div>
+
+  <!-- RODAPÉ FLUTUANTE DO CARRINHO -->
+  <div class="shopee-cart-footer" id="shopee-cart-footer-bar" style="display:none">
+    <div class="footer-left">
+      <label class="shopee-checkbox-label">
+        <input type="checkbox" class="shopee-checkbox" id="select-all-checkbox" checked onchange="toggleSelectAll(this)">
+        <span>Tudo</span>
+      </label>
+    </div>
+    <div class="footer-right">
+      <div class="footer-total-box">
+        <div class="footer-total-price-row">
+          <span>Total:</span>
+          <span class="footer-total-price-val" id="footer-total-val">R$ 0,00</span>
+        </div>
+        <span class="footer-total-saving" id="footer-saving-val">R$ 0,50 de desconto</span>
+      </div>
+      <button class="footer-checkout-btn" id="footer-checkout-btn-action" onclick="irParaCheckout()">Finalizar<br>compra (0)</button>
+    </div>
+  </div>
+
+  <!-- MODAL ENDEREÇO - TELA COMPLETA ESTILO TIKTOK -->
+  <div id="address-modal-box" style="display:none; position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; max-width:480px; height:100%; background:#f5f5f5; z-index:999; overflow-y:auto; flex-direction:column;">
+    <!-- Header da tela de endereço -->
+    <div style="background:#fff; min-height:64px; display:flex; align-items:center; padding:0 16px; border-bottom:1px solid #eee; position:sticky; top:0; z-index:10;">
+      <button onclick="closeAddressModal()" style="background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:center;width:44px;">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#111" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <h2 id="address-modal-title" style="font-size:18px;font-weight:800;color:#000;margin:0;flex:1;text-align:center;letter-spacing:-0.2px;">Adicionar o novo endereço</h2>
+      <div style="width:44px;"></div>
+    </div>
+
+    <!-- Seção: Informações de contato -->
+    <div style="margin-top:12px;">
+      <div style="background:#f5f5f5; padding:10px 16px; font-size:13px; color:#666; font-weight:500;">Informações de contato</div>
+      <div style="background:#fff;">
+        <input id="addr-nome" type="text" placeholder="Nome e sobrenome" style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+        <div id="err-nome" class="error-text" style="display:none;"></div>
+        <div style="display:flex;align-items:center;border-bottom:1px solid #eee;">
+          <span style="padding:14px 12px 14px 16px;font-size:14px;color:#333;white-space:nowrap;">BR +55</span>
+          <input id="addr-tel" type="tel" placeholder="Número de telefone" style="flex:1;padding:14px 12px 14px 4px;border:none;font-size:14px;color:#333;outline:none;" />
+        </div>
+        <div id="err-tel" class="error-text" style="display:none;"></div>
+        <input id="addr-email" type="email" placeholder="E-mail" style="width:100%;padding:14px 16px;border:none;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+        <div id="err-email" class="error-text" style="display:none;"></div>
+      </div>
+    </div>
+
+    <!-- Seção: Informações de endereço -->
+    <div style="margin-top:12px;">
+      <div style="background:#f5f5f5; padding:10px 16px; font-size:13px; color:#666; font-weight:500;">Informações de endereço</div>
+      <div style="background:#fff;">
+        <input id="addr-cep" type="text" placeholder="CEP/Código postal" style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+        <div id="err-cep" class="error-text" style="display:none;"></div>
+        <div style="display:flex;border-bottom:1px solid #eee;">
+          <select id="addr-estado" style="flex:1;padding:14px 16px;border:none;border-right:1px solid #eee;font-size:14px;color:#333;background:#fff;outline:none;appearance:none;cursor:pointer;">
+            <option value="">Estado/UF</option>
+            <option>AC</option><option>AL</option><option>AM</option><option>AP</option><option>BA</option>
+            <option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option>
+            <option>MG</option><option>MS</option><option>MT</option><option>PA</option><option>PB</option>
+            <option>PE</option><option>PI</option><option>PR</option><option>RJ</option><option>RN</option>
+            <option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SE</option>
+            <option>SP</option><option>TO</option>
+          </select>
+          <input id="addr-cidade" type="text" placeholder="Cidade" style="flex:1;padding:14px 16px;border:none;font-size:14px;color:#333;outline:none;" />
+        </div>
+        <input id="addr-bairro" type="text" placeholder="Bairro/Distrito" style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+        <input id="addr-rua" type="text" placeholder="Endereço" style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+        <input id="addr-numero" type="text" placeholder='Nº da residência. Use "s/n" se nenhum' style="width:100%;padding:14px 16px;border:none;border-bottom:1px solid #eee;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+        <input id="addr-complemento" type="text" placeholder="Apartamento, bloco, unidade etc. (opcional)" style="width:100%;padding:14px 16px;border:none;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+      </div>
+    </div>
+
+    <!-- Seção do CPF (Apenas aparece quando Editar) -->
+    <div id="addr-cpf-group" style="display:none; margin-top:12px;">
+      <div style="background:#f5f5f5; padding:10px 16px; font-size:13px; color:#666; font-weight:500;">Documento de identificação</div>
+      <div style="background:#fff;">
+        <input id="addr-cpf" type="text" placeholder="000.000.000-00" style="width:100%;padding:14px 16px;border:none;font-size:14px;color:#333;box-sizing:border-box;outline:none;" />
+        <div id="err-addr-cpf" class="error-text" style="display:none;"></div>
+      </div>
+    </div>
+
+    <!-- Seção: Configurações -->
+    <div style="margin-top:12px;">
+      <div style="background:#f5f5f5; padding:10px 16px; font-size:13px; color:#666; font-weight:500; margin-top: 10px;">Configurações</div>
+      <div style="background:#fff;display:flex;align-items:center;justify-content:space-between;padding:14px 16px;">
+        <span style="font-size:14px;color:#333;">Definir como padrão</span>
+        <!-- Toggle CSS puro funcional -->
+        <label style="position:relative;display:inline-block;width:48px;height:26px;cursor:pointer;">
+          <input id="addr-padrao" type="checkbox" style="opacity:0;width:0;height:0;position:absolute;">
+          <span id="toggle-track" style="position:absolute;top:0;left:0;right:0;bottom:0;background:#ccc;border-radius:26px;transition:background .3s;"></span>
+          <span id="toggle-thumb" style="position:absolute;top:3px;left:3px;width:20px;height:20px;background:#fff;border-radius:50%;transition:transform .3s;box-shadow:0 1px 3px rgba(0,0,0,.2);"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Aviso de privacidade -->
+    <div style="padding:16px;text-align:center;font-size:12px;color:#888;line-height:1.5;">
+      Leia a <span style="color:#ff2b56;font-weight:600;">Política de privacidade da Stone Shop</span> para saber mais sobre como usamos suas informações pessoais.
+    </div>
+
+    <!-- Botão Salvar -->
+    <div style="padding:12px 16px 28px;">
+      <button onclick="saveAddressForm()" style="width:100%;padding:15px;background:#ff2b56;color:#fff;border:none;border-radius:30px;font-size:16px;font-weight:700;cursor:pointer;">Salvar</button>
+    </div>
+  </div>
+
+  <!-- MODAL CPF -->
+  <div id="cpf-modal-box" style="display:none; position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; max-width:480px; height:100%; background:#f5f5f5; z-index:999; overflow-y:auto; flex-direction:column;">
+    <div style="background:#fff; height:54px; display:flex; align-items:center; padding:0 16px; border-bottom:1px solid #eee; position:sticky; top:0; z-index:10;">
+      <button onclick="closeCpfModal()" style="background:none;border:none;cursor:pointer;padding:0;display:flex;align-items:center;width:36px;">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#222" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <h2 style="font-size:16px;font-weight:700;color:#000;margin:0;flex:1;text-align:center;">Adicionar CPF</h2>
+      <div style="width:36px;"></div>
+    </div>
+    <div style="margin-top:12px;background:#fff;">
+      <input id="input-cpf-full" type="text" placeholder="000.000.000-00" style="width:100%;padding:16px;border:none;border-bottom:1px solid #eee;font-size:16px;color:#333;box-sizing:border-box;outline:none;" />
+      <p style="padding:10px 16px;font-size:12px;color:#888;">O CPF será utilizado para emissão de nota fiscal da sua compra.</p>
+    </div>
+    <div style="padding:20px 16px 28px;">
+      <button onclick="saveCpfForm()" style="width:100%;padding:15px;background:#ff2b56;color:#fff;border:none;border-radius:30px;font-size:16px;font-weight:700;cursor:pointer;">Salvar</button>
+    </div>
+  </div>
+
+  <!-- MODAL CUPONS - BOTTOM SHEET mesmo estilo da Proteção do Cliente -->
+  <div id="cupons-modal-overlay" onclick="closeCuponsModal()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:998;"></div>
+  <div id="cupons-modal-box" style="display:none; position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:100%; max-width:480px; max-height:90vh; background:#fff; border-radius:16px 16px 0 0; z-index:999; overflow-y:auto; flex-direction:column;">
+    <!-- Handle decorativo -->
+    <div style="display:flex; align-items:center; justify-content:center; padding:12px 16px 8px;">
+      <div style="width:36px; height:4px; background:#e0e0e0; border-radius:4px;"></div>
+    </div>
+    <!-- Botão X -->
+    <button onclick="closeCuponsModal()" style="position:absolute; top:10px; right:16px; background:none; border:none; cursor:pointer; width:32px; height:32px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:#f5f5f5;">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#333" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <!-- Título -->
+    <div style="padding:0 20px 12px;">
+      <h2 style="font-size:22px; font-weight:800; color:#111; margin:0;">Ofertas</h2>
+    </div>
+
+    <!-- Conteúdo -->
+    <div style="padding:0 20px 28px; display:flex; flex-direction:column; gap:0;">
+
+      <!-- Info cinza -->
+      <div style="background:#f7f7f7; border-radius:8px; padding:12px 14px; font-size:12px; color:#555; line-height:1.55; margin-bottom:18px;">
+        Resgate esses cupons para aplicá-los automaticamente na finalização da compra.<br>
+        Você pode aplicar 1 cupom e/ou promoção da Stone Shop e 1 cupom e/ou promoção de cada vendedor. Aplicam-se termos individuais.
+      </div>
+
+      <!-- Código promocional -->
+      <div style="padding-bottom:18px; border-bottom:1px solid #f0f0f0;">
+        <div style="font-size:15px; font-weight:700; color:#111; margin-bottom:10px;">Adicionar código promocional</div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <input type="text" placeholder="Insira o código" style="flex:1; padding:12px 14px; border:1px solid #ddd; border-radius:6px; font-size:13px; color:#333; outline:none; background:#fff;" />
+          <button style="padding:12px 20px; background:#ff2b56; color:#fff; border:none; border-radius:6px; font-size:13px; font-weight:700; cursor:pointer; white-space:nowrap;">Aplicar</button>
+        </div>
+      </div>
+
+      <!-- Cupons de vendedor -->
+      <div style="padding-top:16px;">
+        <div style="font-size:15px; font-weight:700; color:#111; margin-bottom:6px;">Cupons de vendedor</div>
+        <p style="font-size:12px; color:#666; line-height:1.5; margin:0 0 14px;">Resgate esses cupons e escolha qual aplicar na finalização da compra. Você pode aplicar 1 cupom da Stone Shop e 1 cupom e/ou promoção de cada vendedor por pedido. Aplicam-se termos individuais.</p>
+
+        <!-- Card cupom -->
+        <div style="border:1px solid #ffe0e6; border-radius:10px; overflow:hidden; background:#fff;">
+          <!-- Tags topo -->
+          <div style="background:#fff5f7; padding:8px 14px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #ffe0e6;">
+            <span style="font-size:11px; font-weight:600; color:#ff2b56; background:#ffe0e6; padding:2px 8px; border-radius:20px;">Resgate limitado</span>
+            <span style="font-size:11px; color:#555;">De Stone Shop</span>
+          </div>
+          <!-- Corpo -->
+          <div style="padding:12px 14px; display:flex; align-items:center; gap:12px;">
+            <div style="display:flex; flex-direction:column; align-items:center; flex-shrink:0;">
+              <div style="width:42px; height:42px; background:#fff0f3; border-radius:8px; display:flex; align-items:center; justify-content:center;">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ff2b56" stroke-width="2"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2z"/></svg>
+              </div>
+              <span style="font-size:10px; color:#ff2b56; font-weight:600; margin-top:3px;">Produto</span>
+            </div>
+            <div style="flex:1;">
+              <div style="font-size:16px; font-weight:800; color:#ff2b56;" id="cupom-desc-valor">Desconto de R$ 0,50</div>
+              <div style="font-size:12px; color:#333; margin-top:2px;">nos pedidos acima de R$ 30</div>
+              <div style="font-size:11px; color:#888; margin-top:1px;">Em produtos selecionados.</div>
+              <div style="height:3px; background:#ffe0e6; border-radius:2px; margin-top:8px;">
+                <div style="height:3px; background:#ff2b56; width:60%; border-radius:2px;"></div>
+              </div>
+              <div style="display:flex; justify-content:space-between; margin-top:5px;">
+                <span style="font-size:11px; color:#888;">Expira em 4 dias</span>
+                <span style="font-size:11px; color:#1976D2; cursor:pointer;">Termos e condições</span>
+              </div>
+            </div>
+            <button style="padding:9px 16px; background:#ffb3c1; color:#fff; border:none; border-radius:20px; font-size:13px; font-weight:700; cursor:pointer; flex-shrink:0;">Usar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- MODAL PROTEÇÃO DO CLIENTE (Bottom Sheet) -->
+  <div id="protecao-modal-overlay" onclick="closeProtecaoModal()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:998;"></div>
+  <div id="protecao-modal-box" style="display:none; position:fixed; bottom:0; left:50%; transform:translateX(-50%); width:100%; max-width:480px; background:#fff; border-radius:16px 16px 0 0; z-index:999; overflow:hidden; box-shadow: 0 -4px 16px rgba(0,0,0,0.15); max-height:85vh;">
+    <div style="position:relative; width:100%;">
+      <!-- Área de clique invisível exatamente em cima do X desenhado na imagem -->
+      <div onclick="closeProtecaoModal()" style="position:absolute; top:12px; right:12px; width:42px; height:42px; cursor:pointer; z-index:1000; background:transparent;"></div>
+      
+      <!-- Imagem de Proteção do Cliente Oficial -->
+      <div style="width:100%; overflow-y:auto; max-height:85vh; -webkit-overflow-scrolling:touch; box-sizing:border-box;">
+        <img src="../modalprotecaodocliente/IMG_5391.PNG" alt="Proteção do cliente" style="width:100%; display:block; height:auto; object-fit:contain; pointer-events:none;-webkit-touch-callout:none;user-select:none;">
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL DE REMOÇÃO DE ITEM CUSTOMIZADO (Igual ao do print do usuário) -->
+  <div id="remove-confirm-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999998; align-items:center; justify-content:center;">
+    <div style="background:#fff; width:88%; max-width:320px; border-radius:24px; text-align:center; overflow:hidden; font-family:-apple-system,BlinkMacSystemFont,sans-serif; box-shadow:0 4px 20px rgba(0,0,0,0.15); animation: zoomInConfirm 0.2s ease-out;">
+      <div style="padding:28px 24px; font-size:16px; font-weight:700; color:#000; border-bottom:1px solid #f0f0f0; line-height:1.4;">
+        Deseja remover este item?
+      </div>
+      <div style="display:flex; height:48px;">
+        <button id="btn-cancel-remove" style="flex:1; background:none; border:none; border-right:1px solid #f0f0f0; font-size:15px; color:#666; font-weight:500; cursor:pointer; outline:none; height:100%;">Cancelar</button>
+        <button id="btn-confirm-remove" style="flex:1; background:none; border:none; font-size:15px; color:#ff2c55; font-weight:700; cursor:pointer; outline:none; height:100%;">Remover</button>
+      </div>
+    </div>
+  </div>
+  <style>
+    @keyframes zoomInConfirm {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+
+</div>
+
+<script src="../js/catalogo.js?v=1785917921837"></script>
+<script src="../js/app.js"></script>
+<script>
+function parseSafeFloat(val) {
+  if (typeof val === 'number') return val;
+  if (!val) return 0;
+  const str = String(val).trim();
+  if (str.includes(',')) {
+    return parseFloat(str.replace(/\./g, '').replace(',', '.')) || 0;
+  }
+  return parseFloat(str) || 0;
+}
+
+function formatarMoeda(valor) {
+  return valor.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+// Dados locais
+function voltarDoCarrinho() {
+  const ultimoProduto = localStorage.getItem('famosinhos_ultimo_produto_url');
+  if (ultimoProduto) {
+    window.location.href = ultimoProduto;
+  } else {
+    window.location.href = '../index.html';
+  }
+}
+
+let itemsSelecionados = {}; // Rastreia quais IDs de item estão selecionados no carrinho
+function loadAddress() {
+  const address = localStorage.getItem('user_address');
+  const cpf = localStorage.getItem('user_cpf');
+  const cidade = localStorage.getItem('user_cidade') || '';
+  const estado = localStorage.getItem('user_estado') || '';
+  const rua = localStorage.getItem('user_rua') || '';
+  const bairro = localStorage.getItem('user_bairro') || '';
+  const addrSection = document.getElementById('address-cpf-section');
+  const editBtn = document.getElementById('header-edit-btn');
+  const subtitle = document.getElementById('cart-header-subtitle');
+  const subtitleText = document.getElementById('cart-subtitle-text');
+  const header = document.getElementById('cart-header');
+
+  if (address && cpf) {
+    // Monta texto curto para o subtitulo do header
+    let displayLine = '';
+    if (cidade && estado) {
+      displayLine = `${cidade}, ${estado}`;
+      if (rua) displayLine = `${rua} - ${displayLine}`;
+    } else {
+      displayLine = address;
+    }
+    // Exibe subtitulo no header
+    if (subtitle) subtitle.style.display = 'block';
+    if (subtitleText) subtitleText.textContent = displayLine;
+    if (header) header.style.height = '64px';
+
+    // Mostra resumo compacto no address-cpf-section
+    if (addrSection) {
+      addrSection.innerHTML = `
+        <div onclick="openAddressModal(true)" style="background:#fff;padding:0;cursor:pointer;">
+        </div>
+        <div style="height:3px;background-image:repeating-linear-gradient(90deg,#00c2cb 0px,#00c2cb 10px,transparent 10px,transparent 14px,#ff2b56 14px,#ff2b56 24px,transparent 24px,transparent 28px);"></div>`;
+    }
+    if (editBtn) editBtn.style.display = 'block';
+
+  } else if (address && !cpf) {
+    const localDisplay = cidade && estado ? `${cidade}, ${estado}` : address;
+    if (subtitle) subtitle.style.display = 'none';
+    if (header) header.style.height = '52px';
+    if (addrSection) {
+      addrSection.innerHTML = `
+        <div style="background:#f5f5f5;padding:8px 12px 0 12px;">
+          <div style="display:flex;align-items:center;gap:8px;padding:12px 16px;background:#fff;border:1px solid #e5e5e5;border-radius:8px;margin-bottom:10px;">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#2EA84F" stroke-width="2.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span style="font-size:13px;color:#333;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500;">${localDisplay}</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#2EA84F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <div onclick="openCpfModal()" style="display:flex;align-items:center;gap:14px;padding:14px 16px;cursor:pointer;background:#fff;border:1px solid #e5e5e5;border-radius:8px;margin-bottom:10px;">
+            <span style="font-size:22px;font-weight:300;color:#333;flex-shrink:0;line-height:1;width:22px;text-align:center;">+</span>
+            <span style="font-size:14px;font-weight:700;color:#222;">Adicionar CPF</span>
+          </div>
+          <div style="height:3px;margin:0 -12px;background-image:repeating-linear-gradient(90deg,#00c2cb 0px,#00c2cb 10px,transparent 10px,transparent 14px,#ff2b56 14px,#ff2b56 24px,transparent 24px,transparent 28px);"></div>
+        </div>`;
+    }
+    if (editBtn) editBtn.style.display = 'none';
+
+  } else {
+    if (subtitle) subtitle.style.display = 'none';
+    if (header) header.style.height = '52px';
+    if (addrSection) {
+      addrSection.innerHTML = `
+        <div style="background:#f5f5f5;padding:8px 12px 0 12px;">
+          <div id="address-header-trigger" onclick="openAddressModal()" style="display:flex;align-items:center;gap:14px;padding:14px 16px;cursor:pointer;background:#fff;border:1px solid #e5e5e5;border-radius:8px;margin-bottom:10px;">
+            <span style="font-size:22px;font-weight:300;color:#333;flex-shrink:0;line-height:1;width:22px;text-align:center;">+</span>
+            <span id="address-header-text" style="font-size:14px;font-weight:700;color:#222;">Adicionar endereço de entrega</span>
+          </div>
+          <div onclick="openCpfModal()" style="display:flex;align-items:center;gap:14px;padding:14px 16px;cursor:pointer;background:#fff;border:1px solid #e5e5e5;border-radius:8px;margin-bottom:10px;">
+            <span style="font-size:22px;font-weight:300;color:#333;flex-shrink:0;line-height:1;width:22px;text-align:center;">+</span>
+            <span id="cpf-header-text" style="font-size:14px;font-weight:700;color:#222;">Adicionar CPF</span>
+          </div>
+          <div style="height:3px;margin:0 -12px;background-image:repeating-linear-gradient(90deg,#00c2cb 0px,#00c2cb 10px,transparent 10px,transparent 14px,#ff2b56 14px,#ff2b56 24px,transparent 24px,transparent 28px);"></div>
+        </div>`;
+    }
+    if (editBtn) editBtn.style.display = 'none';
+  }
+}
+
+function irParaCheckout() {
+  const cart = getCart();
+  const checkoutItems = cart.filter((item, index) => itemsSelecionados[index] !== false);
+  
+  if (checkoutItems.length === 0) {
+    showToast('Selecione pelo menos um produto para continuar!');
+    return;
+  }
+
+  localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(checkoutItems));
+
+  const address = localStorage.getItem('user_address');
+  const cpf = localStorage.getItem('user_cpf');
+  if (!address) {
+    showToast('Adicione seu endereço de entrega primeiro!');
+    openAddressModal();
+    return;
+  }
+  if (!cpf) {
+    showToast('Adicione seu CPF para continuar!');
+    openCpfModal();
+    return;
+  }
+  window.location.href = 'resumo.html';
+}
+
+
+function openAddressModal() {
+  const modal = document.getElementById('address-modal-box');
+  const fields = {
+    'addr-nome': 'user_nome', 'addr-tel': 'user_tel', 'addr-email': 'user_email',
+    'addr-cep': 'user_cep', 'addr-cidade': 'user_cidade', 'addr-bairro': 'user_bairro',
+    'addr-rua': 'user_rua', 'addr-numero': 'user_numero', 'addr-complemento': 'user_complemento'
+  };
+  Object.entries(fields).forEach(([id, key]) => {
+    const el = document.getElementById(id);
+    if (el) el.value = localStorage.getItem(key) || '';
+  });
+  const estadoEl = document.getElementById('addr-estado');
+  if (estadoEl) estadoEl.value = localStorage.getItem('user_estado') || '';
+  
+  // CPF integrado no rodapé
+  const savedCpf = localStorage.getItem('user_cpf');
+  const cpfFooter = document.getElementById('addr-cpf-footer-display');
+  const cpfLabel = document.getElementById('addr-cpf-saved-label');
+  if (savedCpf && cpfFooter && cpfLabel) {
+    cpfLabel.textContent = savedCpf;
+    cpfFooter.style.display = 'block';
+  } else if (cpfFooter) {
+    cpfFooter.style.display = 'none';
+  }
+  
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeAddressModal() {
+  const modal = document.getElementById('address-modal-box');
+  if (modal) modal.style.display = 'none';
+}
+
+function openProtecaoModal() {
+  const overlay = document.getElementById('protecao-modal-overlay');
+  const modal = document.getElementById('protecao-modal-box');
+  if (overlay) overlay.style.display = 'block';
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeProtecaoModal() {
+  const overlay = document.getElementById('protecao-modal-overlay');
+  const modal = document.getElementById('protecao-modal-box');
+  if (overlay) overlay.style.display = 'none';
+  if (modal) modal.style.display = 'none';
+}
+
+function openCpfModal() {
+  const modal = document.getElementById('cpf-modal-box');
+  const input = document.getElementById('input-cpf-full');
+  if (input) input.value = localStorage.getItem('user_cpf') || '';
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeCpfModal() {
+  const modal = document.getElementById('cpf-modal-box');
+  if (modal) modal.style.display = 'none';
+}
+
+function openCuponsModal() {
+  const overlay = document.getElementById('cupons-modal-overlay');
+  const modal = document.getElementById('cupons-modal-box');
+  // Atualiza o valor do desconto no card
+  const cart = getCart();
+  let totalDesc = 0;
+  cart.forEach((item, index) => {
+    let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => p.id === item.id) : null;
+    let orig = item.preco * 1.5;
+    if (item.precoOrig) {
+      orig = parseSafeFloat(item.precoOrig);
+    } else if (catalogoProd && catalogoProd.precoOrig) {
+      orig = parseSafeFloat(catalogoProd.precoOrig);
+    }
+      if (Number(item.id) === 56) {
+        if (itemPreco === 75.9) {
+          if (typeof orig !== "undefined") orig = 788.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 788.90;
+        } else if (itemPreco === 95.9) {
+          if (typeof orig !== "undefined") orig = 1833.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 1833.90;
+        } else if (itemPreco === 144.9) {
+          if (typeof orig !== "undefined") orig = 3798.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 3798.90;
+        }
+      }
+    totalDesc += (orig - item.preco) * (item.qty || 1);
+  });
+  const descEl = document.getElementById('cupom-desc-valor');
+  if (descEl) descEl.textContent = 'Desconto de R$ ' + formatarMoeda(totalDesc);
+  if (overlay) overlay.style.display = 'block';
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeCuponsModal() {
+  const overlay = document.getElementById('cupons-modal-overlay');
+  const modal = document.getElementById('cupons-modal-box');
+  if (overlay) overlay.style.display = 'none';
+  if (modal) modal.style.display = 'none';
+}
+
+let isEditingAddress = false;
+
+function openAddressModal(editMode = false) {
+  isEditingAddress = !!editMode;
+  const modal = document.getElementById('address-modal-box');
+  const titleEl = document.getElementById('address-modal-title');
+  const cpfGroup = document.getElementById('addr-cpf-group');
+  
+  // Limpa mensagens de erro e bordas vermelhas
+  document.querySelectorAll('.error-text').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('input').forEach(el => el.classList.remove('input-error'));
+
+  const fields = {
+    'addr-nome': 'user_nome', 'addr-tel': 'user_tel', 'addr-email': 'user_email',
+    'addr-cep': 'user_cep', 'addr-cidade': 'user_cidade', 'addr-bairro': 'user_bairro',
+    'addr-rua': 'user_rua', 'addr-numero': 'user_numero', 'addr-complemento': 'user_complemento'
+  };
+
+  if (isEditingAddress) {
+    if (titleEl) titleEl.textContent = "Editar endereço";
+    if (cpfGroup) cpfGroup.style.display = "block";
+    
+    // Preenche com os dados salvos
+    Object.entries(fields).forEach(([id, key]) => {
+      const el = document.getElementById(id);
+      if (el) el.value = localStorage.getItem(key) || '';
+    });
+    const estadoEl = document.getElementById('addr-estado');
+    if (estadoEl) estadoEl.value = localStorage.getItem('user_estado') || '';
+    
+    const cpfEl = document.getElementById('addr-cpf');
+    if (cpfEl) cpfEl.value = localStorage.getItem('user_cpf') || '';
+  } else {
+    if (titleEl) titleEl.textContent = "Adicionar o novo endereço";
+    if (cpfGroup) cpfGroup.style.display = "none";
+    
+    // Limpa campos para novo preenchimento
+    Object.entries(fields).forEach(([id, key]) => {
+      const el = document.getElementById(id);
+      if (el) el.value = '';
+    });
+    const estadoEl = document.getElementById('addr-estado');
+    if (estadoEl) estadoEl.value = '';
+  }
+
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeAddressModal() {
+  const modal = document.getElementById('address-modal-box');
+  if (modal) modal.style.display = 'none';
+}
+
+function openCpfModal() {
+  const modal = document.getElementById('cpf-modal-box');
+  const input = document.getElementById('input-cpf-full');
+  if (input) input.value = localStorage.getItem('user_cpf') || '';
+  
+  // Limpa erros do modal CPF
+  const inputEl = document.getElementById('input-cpf-full');
+  if (inputEl) inputEl.classList.remove('input-error');
+  
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeCpfModal() {
+  const modal = document.getElementById('cpf-modal-box');
+  if (modal) modal.style.display = 'none';
+}
+
+// Algoritmo Oficial de CPF
+function validarCPF(cpf) {
+  cpf = cpf.replace(/\D/g, '');
+  if (cpf.length !== 11) return false;
+  if (/^(\d)\1{10}$/.test(cpf)) return false; // descarta repetidos
+  
+  let soma = 0;
+  for (let i = 0; i < 9; i++) soma += parseInt(cpf.charAt(i)) * (10 - i);
+  let resto = 11 - (soma % 11);
+  let digito1 = (resto === 10 || resto === 11) ? 0 : resto;
+  if (digito1 !== parseInt(cpf.charAt(9))) return false;
+  
+  soma = 0;
+  for (let i = 0; i < 10; i++) soma += parseInt(cpf.charAt(i)) * (11 - i);
+  resto = 11 - (soma % 11);
+  let digito2 = (resto === 10 || resto === 11) ? 0 : resto;
+  if (digito2 !== parseInt(cpf.charAt(10))) return false;
+  
+  return true;
+}
+
+// Formatação automática do CPF
+function formatarCPF(value) {
+  value = value.replace(/\D/g, '');
+  if (value.length > 11) value = value.slice(0, 11);
+  if (value.length > 9) {
+    return value.replace(/^(\d{3})(\d{3})(\d{3})(\d{1,2})$/, '$1.$2.$3-$4');
+  }
+  if (value.length > 6) {
+    return value.replace(/^(\d{3})(\d{3})(\d{1,3})$/, '$1.$2.$3');
+  }
+  if (value.length > 3) {
+    return value.replace(/^(\d{3})(\d{1,3})$/, '$1.$2');
+  }
+  return value;
+}
+
+// Adiciona formatação automática nos inputs de CPF
+document.addEventListener('DOMContentLoaded', () => {
+  const cpfInputMain = document.getElementById('input-cpf-full');
+  if (cpfInputMain) {
+    cpfInputMain.addEventListener('input', function() {
+      this.value = formatarCPF(this.value);
+    });
+  }
+
+  const cpfInputModal = document.getElementById('addr-cpf');
+  if (cpfInputModal) {
+    cpfInputModal.addEventListener('input', function() {
+      this.value = formatarCPF(this.value);
+    });
+  }
+
+  // Máscaras de telefone (permitir apenas números, max 11 dígitos)
+  const telInput = document.getElementById('addr-tel');
+  if (telInput) {
+    telInput.addEventListener('input', function() {
+      this.value = this.value.replace(/\D/g, '').slice(0, 11);
+    });
+  }
+
+  // Máscaras de CEP (permitir apenas números, max 8 dígitos)
+  const cepInput = document.getElementById('addr-cep');
+  if (cepInput) {
+    cepInput.addEventListener('input', function() {
+      this.value = this.value.replace(/\D/g, '').slice(0, 8);
+      buscarCepCarrinho(this.value);
+    });
+  }
+});
+
+function buscarCepCarrinho(cep) {
+  cep = cep.replace(/\D/g, '');
+  const errCep = document.getElementById('err-cep');
+  const inputCep = document.getElementById('addr-cep');
+  
+  if (cep.length === 8) {
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+      .then(r => r.json())
+      .then(d => {
+        if (!d.erro) {
+          if (document.getElementById('addr-cidade')) document.getElementById('addr-cidade').value = d.localidade;
+          if (document.getElementById('addr-estado')) document.getElementById('addr-estado').value = d.uf;
+          if (document.getElementById('addr-bairro')) document.getElementById('addr-bairro').value = d.bairro;
+          if (document.getElementById('addr-rua')) document.getElementById('addr-rua').value = d.logradouro;
+          
+          if (errCep) errCep.style.display = 'none';
+          if (inputCep) inputCep.classList.remove('input-error');
+        } else {
+          if (errCep) {
+            errCep.textContent = 'CEP não encontrado. Insira os dados manualmente.';
+            errCep.style.display = 'block';
+          }
+          if (inputCep) inputCep.classList.add('input-error');
+        }
+      })
+      .catch(() => {
+        if (errCep) {
+          errCep.textContent = 'Erro ao buscar o CEP. Insira os dados manualmente.';
+          errCep.style.display = 'block';
+        }
+        if (inputCep) inputCep.classList.add('input-error');
+      });
+  }
+}
+
+function saveAddressForm() {
+  const nomeEl = document.getElementById('addr-nome');
+  const telEl = document.getElementById('addr-tel');
+  const emailEl = document.getElementById('addr-email');
+  const cepEl = document.getElementById('addr-cep');
+  const cidadeEl = document.getElementById('addr-cidade');
+  const estadoEl = document.getElementById('addr-estado');
+  const ruaEl = document.getElementById('addr-rua');
+  const numEl = document.getElementById('addr-numero');
+  const compEl = document.getElementById('addr-complemento');
+  const cpfEl = document.getElementById('addr-cpf');
+
+  const nome = (nomeEl?.value || '').trim();
+  const tel = (telEl?.value || '').replace(/\D/g, '');
+  const email = (emailEl?.value || '').trim();
+  const cep = (cepEl?.value || '').replace(/\D/g, '');
+  const cidade = (cidadeEl?.value || '').trim();
+  const estado = (estadoEl?.value || '').trim();
+  const rua = (ruaEl?.value || '').trim();
+  const numero = (numEl?.value || '').trim();
+  const complemento = (compEl?.value || '').trim();
+  const cpf = (cpfEl?.value || '').trim();
+
+  let hasErrors = false;
+
+  // Resetar erros anteriores
+  document.querySelectorAll('.error-text').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('input').forEach(el => el.classList.remove('input-error'));
+
+  // Validar Nome Completo
+  if (!nome || nome.split(' ').filter(Boolean).length < 2) {
+    const err = document.getElementById('err-nome');
+    if (err) {
+      err.textContent = 'Insira seu nome e sobrenome (completo)';
+      err.style.display = 'block';
+    }
+    if (nomeEl) nomeEl.classList.add('input-error');
+    hasErrors = true;
+  }
+
+  // Validar Telefone
+  if (!tel || tel.length !== 11) {
+    const err = document.getElementById('err-tel');
+    if (err) {
+      err.textContent = 'Telefone inválido (deve conter 11 números)';
+      err.style.display = 'block';
+    }
+    if (telEl) telEl.classList.add('input-error');
+    hasErrors = true;
+  }
+
+  // Validar E-mail
+  if (!email || !email.includes('@') || !email.includes('.')) {
+    const err = document.getElementById('err-email');
+    if (err) {
+      err.textContent = 'Insira um e-mail válido';
+      err.style.display = 'block';
+    }
+    if (emailEl) emailEl.classList.add('input-error');
+    hasErrors = true;
+  }
+
+  // Validar CEP
+  if (!cep || cep.length !== 8) {
+    const err = document.getElementById('err-cep');
+    if (err) {
+      err.textContent = 'CEP deve conter 8 dígitos';
+      err.style.display = 'block';
+    }
+    if (cepEl) cepEl.classList.add('input-error');
+    hasErrors = true;
+  }
+
+  // Validar campos de endereço obrigatórios
+  if (!cidade || !rua || !numero) {
+    showToast('Cidade, Endereço e Nº da residência são obrigatórios!');
+    hasErrors = true;
+  }
+
+  // Validar CPF (Somente em modo de edição)
+  if (isEditingAddress) {
+    if (!cpf || !validarCPF(cpf)) {
+      const err = document.getElementById('err-addr-cpf');
+      if (err) {
+        err.textContent = 'CPF inválido';
+        err.style.display = 'block';
+      }
+      if (cpfEl) cpfEl.classList.add('input-error');
+      hasErrors = true;
+    }
+  }
+
+  if (hasErrors) {
+    showToast('Corrija as informações incorretas!');
+    return;
+  }
+
+  // Salvar no localStorage
+  localStorage.setItem('user_nome', nome);
+  localStorage.setItem('user_tel', tel);
+  localStorage.setItem('user_email', email);
+  localStorage.setItem('user_cep', cep);
+  localStorage.setItem('user_cidade', cidade);
+  localStorage.setItem('user_bairro', (document.getElementById('addr-bairro')?.value || '').trim());
+  localStorage.setItem('user_rua', rua);
+  localStorage.setItem('user_numero', numero);
+  localStorage.setItem('user_complemento', complemento);
+  localStorage.setItem('user_estado', estado);
+
+  const endFull = `${rua}, ${cidade} - ${estado}`;
+  localStorage.setItem('user_address', endFull);
+
+  if (isEditingAddress) {
+    localStorage.setItem('user_cpf', cpf);
+  }
+
+  loadAddress();
+  closeAddressModal();
+  showToast('Endereço salvo com sucesso!');
+
+}
+
+function saveCpfForm() {
+  const cpfEl = document.getElementById('input-cpf-full');
+  const cpf = (cpfEl?.value || '').trim();
+
+  if (!cpf || !validarCPF(cpf)) {
+    if (cpfEl) cpfEl.classList.add('input-error');
+    showToast('CPF inválido!');
+    return;
+  }
+
+  localStorage.setItem('user_cpf', cpf);
+  loadAddress();
+  closeCpfModal();
+  showToast('CPF salvo com sucesso!');
+}
+
+function toggleSelectItem(id, checked) {
+  itemsSelecionados[id] = checked;
+  updateTotals();
+}
+
+function toggleSelectAll(checkbox) {
+  const checked = checkbox.checked;
+  const checkboxes = document.querySelectorAll('.cart-item-check');
+  checkboxes.forEach(cb => {
+    cb.checked = checked;
+    const id = cb.getAttribute('data-id');
+    itemsSelecionados[id] = checked;
+  });
+  updateTotals();
+}
+
+function calcTotalDiscount(cart, selecionados) {
+  let discount = 0;
+  cart.forEach((item, index) => {
+    if (selecionados[index] !== false) {
+      let itemPreco = parseSafeFloat(item.preco);
+      let itemQty = parseInt(item.qty) || 1;
+      let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => p.id === item.id) : null;
+      let orig = itemPreco * 1.5;
+      if (item.precoOrig) {
+        orig = parseSafeFloat(item.precoOrig);
+      } else if (catalogoProd && catalogoProd.precoOrig) {
+        orig = parseSafeFloat(catalogoProd.precoOrig);
+      }
+      if (Number(item.id) === 56) {
+        if (itemPreco === 75.9) {
+          if (typeof orig !== "undefined") orig = 788.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 788.90;
+        } else if (itemPreco === 95.9) {
+          if (typeof orig !== "undefined") orig = 1833.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 1833.90;
+        } else if (itemPreco === 144.9) {
+          if (typeof orig !== "undefined") orig = 3798.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 3798.90;
+        }
+      }
+      discount += (orig - itemPreco) * itemQty;
+    }
+  });
+  return discount;
+}
+
+function updateTotals() {
+  const cart = getCart();
+  let total = 0;
+  let count = 0;
+  
+  cart.forEach((item, index) => {
+    if (itemsSelecionados[index] !== false) {
+      let itemPreco = parseSafeFloat(item.preco);
+      let itemQty = parseInt(item.qty) || 1;
+      total += itemPreco * itemQty;
+      count += itemQty;
+    }
+  });
+
+  const discount = calcTotalDiscount(cart, itemsSelecionados);
+  const totalFmt = 'R$ ' + formatarMoeda(total);
+  const discountFmt = 'R$ ' + formatarMoeda(discount) + ' de desconto';
+  
+  const footerTotal = document.getElementById('footer-total-val');
+  const footerSaving = document.getElementById('footer-saving-val');
+  const footerBtn = document.getElementById('footer-checkout-btn-action');
+  
+  if (footerTotal) footerTotal.textContent = totalFmt;
+  if (footerSaving) footerSaving.textContent = discountFmt;
+  if (footerBtn) footerBtn.innerHTML = `Finalizar<br>compra (${count})`;
+}
+
+function renderCart() {
+  try {
+    const cart = getCart();
+    const content = document.getElementById('cart-items-wrapper');
+    const footerBar = document.getElementById('shopee-cart-footer-bar');
+    const headerTitle = document.getElementById('cart-header-title');
+
+    if (headerTitle) {
+      headerTitle.textContent = `Carrinho (${getCartCount()})`;
+    }
+
+    if (!content) return;
+
+    if (!cart || !cart.length) {
+      const addrSection = document.getElementById('address-cpf-section');
+      if (addrSection) addrSection.style.display = 'none';
+      content.innerHTML = `
+        <div style="text-align:center; padding: 48px 16px; background:#fff;">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5" style="margin-bottom:12px;">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <div style="font-size:16px; font-weight:700; color:#333; margin-bottom:4px;">Seu carrinho está vazio</div>
+          <div style="font-size:13px; color:#888; margin-bottom:16px;">Que tal dar uma olhada nas nossas promoções de hoje?</div>
+          <a class="cart-empty-shopping-btn" href="../index.html">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            Ir para a loja
+          </a>
+        </div>
+        
+        <div style="padding: 16px; background: #f5f5f5;">
+          <div style="font-size: 15px; font-weight: 700; margin-bottom: 12px; color: #222;">Você também pode gostar</div>
+          <div id="cart-related-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;"></div>
+        </div>`;
+        
+      if (footerBar) footerBar.style.display = 'none';
+      renderRelatedList();
+      return;
+    }
+
+    const addrSection = document.getElementById('address-cpf-section');
+    if (addrSection) addrSection.style.display = 'block';
+
+    if (footerBar) footerBar.style.display = 'flex';
+
+    let html = '';
+    cart.forEach((item, index) => {
+      if (itemsSelecionados[index] === undefined) {
+        itemsSelecionados[index] = true;
+      }
+      const isChecked = itemsSelecionados[index] ? 'checked' : '';
+
+      let finalImg = item.img || '';
+      if (finalImg && !finalImg.startsWith('http') && !finalImg.startsWith('//')) {
+        if (finalImg.startsWith('../')) finalImg = finalImg.substring(3);
+        finalImg = '../' + finalImg;
+      }
+
+      let itemPreco = parseSafeFloat(item.preco);
+      let itemQty = parseInt(item.qty) || 1;
+
+      let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => p.id === item.id) : null;
+      let precoOrigVal = itemPreco * 1.5;
+      if (item.precoOrig) {
+        precoOrigVal = parseSafeFloat(item.precoOrig);
+      } else if (catalogoProd && catalogoProd.precoOrig) {
+        precoOrigVal = parseSafeFloat(catalogoProd.precoOrig);
+      }
+      if (Number(item.id) === 56) {
+        if (itemPreco === 75.9) {
+          if (typeof orig !== "undefined") orig = 788.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 788.90;
+        } else if (itemPreco === 95.9) {
+          if (typeof orig !== "undefined") orig = 1833.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 1833.90;
+        } else if (itemPreco === 144.9) {
+          if (typeof orig !== "undefined") orig = 3798.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 3798.90;
+        }
+      }
+
+      const precoMultiplicado = formatarMoeda(itemPreco * itemQty);
+      const precoOrigMultiplicado = formatarMoeda(precoOrigVal * itemQty);
+
+      let descPct = precoOrigVal > itemPreco ? Math.round((1 - itemPreco / precoOrigVal) * 100) : 0;
+      if (Number(item.id) === 56 || Number(item.id) === 100 || Number(item.id) === 102) {
+        descPct = 82;
+      }
+
+      html += `
+      <div class="shop-section">
+        <div class="shop-header">
+          <label class="shopee-checkbox-label">
+            <input type="checkbox" class="shopee-checkbox cart-item-check" data-id="${index}" ${isChecked} onchange="toggleSelectItem(${index}, this.checked)">
+          </label>
+          <span class="shop-header-title" onclick="window.location.href='../index.html'">
+            Stone Shop
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </span>
+        </div>
+        
+        <div class="shop-frete-banner">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="1" y="3" width="15" height="13" />
+            <polygon points="16 8 20 8 23 11 23 16 16 16" />
+            <circle cx="5.5" cy="18.5" r="2.5" />
+            <circle cx="18.5" cy="18.5" r="2.5" />
+          </svg>
+          <span>Você ganhou frete grátis!</span>
+        </div>
+
+        <div class="cart-item-shopee">
+          <img class="cart-item-img" src="${finalImg}" alt="${item.nome || ''}" onclick="window.location.href='produto-${item.id}.html'" style="cursor:pointer;" onerror="this.src='https://via.placeholder.com/82'">
+          <div class="cart-item-details">
+            <div class="cart-item-name">${item.nome || ''}</div>
+            
+            ${item.variacao ? `
+            <div style="font-size: 12px; color: #8c8c8c; margin-top: 3px;">
+              ${item.variacao}
+            </div>` : ''}
+
+            <div style="display: inline-flex; align-items: center; gap: 4px; background: #fafafa; border-radius: 4px; padding: 3px 6px; margin-top: 5px; font-size: 11px; color: #555;">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#d4a373" stroke-width="2.5" style="vertical-align: middle;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Devolução gratuita
+            </div>
+            
+            <div class="cart-item-price-qty-row" style="margin-top: 3px; display: flex; align-items: flex-end; justify-content: space-between;">
+              <div class="cart-item-price-wrapper" style="display: flex; flex-direction: column; gap: 0px;">
+                <div class="cart-item-price-current" style="font-size: 15px; font-weight: 700; color: #ff2b56; display: flex; align-items: baseline;">
+                  <span style="font-size: 14px; font-weight: 700; margin-right: 2px;">R$</span>
+                  <span style="font-size: 16px; font-weight: 800;">${precoMultiplicado}</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 4px;">
+                  <span class="cart-item-price-old" style="font-size: 11px; color: #b5b5b5; text-decoration: line-through;">R$ ${precoOrigMultiplicado}</span>
+                  ${descPct ? `<span style="background: #fff0f3; color: #ff2b56; font-size: 10px; font-weight: 600; padding: 1px 4px; border-radius: 2px;">-${descPct}%</span>` : ''}
+                </div>
+              </div>
+              
+              <div class="cart-item-qty-selector">
+                <button class="cart-qty-btn" onclick="changeQty(${item.id}, -1, '${item.variacao || ''}')">−</button>
+                <span class="cart-qty-val" id="qty-${item.id}">${itemQty}</span>
+                <button class="cart-qty-btn" onclick="changeQty(${item.id}, 1, '${item.variacao || ''}')">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    });
+
+    let totalDesconto = 0;
+    cart.forEach((item) => {
+      let itemPreco = parseSafeFloat(item.preco);
+      let itemQty = parseInt(item.qty) || 1;
+      let catalogoProd = typeof CATALOGO_PRODUTOS !== 'undefined' ? CATALOGO_PRODUTOS.find(p => p.id === item.id) : null;
+      let orig = itemPreco * 1.5;
+      if (item.precoOrig) {
+        orig = parseSafeFloat(item.precoOrig);
+      } else if (catalogoProd && catalogoProd.precoOrig) {
+        orig = parseSafeFloat(catalogoProd.precoOrig);
+      }
+      if (Number(item.id) === 56) {
+        if (itemPreco === 75.9) {
+          if (typeof orig !== "undefined") orig = 788.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 788.90;
+        } else if (itemPreco === 95.9) {
+          if (typeof orig !== "undefined") orig = 1833.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 1833.90;
+        } else if (itemPreco === 144.9) {
+          if (typeof orig !== "undefined") orig = 3798.90;
+          if (typeof precoOrigVal !== "undefined") precoOrigVal = 3798.90;
+        }
+      }
+      totalDesconto += (orig - itemPreco) * itemQty;
+    });
+    const descontoFmt = 'R$ ' + formatarMoeda(totalDesconto);
+
+    html += `
+    <div class="coupon-section" onclick="openCuponsModal()">
+      <div class="coupon-left">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2z"/></svg>
+        <span>Desconto de ${descontoFmt} aplicado</span>
+      </div>
+      <div class="coupon-right">
+        <span>Todos os cupons</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </div>
+    </div>`;
+
+    html += `
+    <div class="cart-protection-box">
+      <div class="cart-protection-header" onclick="openProtecaoModal()" style="cursor:pointer;">
+        <div class="cart-protection-header-left">
+          <svg width="18" height="18" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24,44c0,0,20-4,20-34L24,4L4,10C4,42,24,44,24,44z" fill="#8B4D0B"/>
+            <path d="M32.829,18L22,28.828L15.171,22L18,19.172l4,4l8-8L32.829,18z" fill="#fff"/>
+          </svg>
+          Proteção do cliente
+        </div>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </div>
+      <div class="cart-protection-grid">
+        <div class="cart-protection-item">✓ Devolução gratuita</div>
+        <div class="cart-protection-item">✓ Reembolso se algo der errado</div>
+        <div class="cart-protection-item">✓ Pagamento seguro</div>
+        <div class="cart-protection-item">✓ Reembolso automático por danos</div>
+      </div>
+    </div>`;
+
+    html += `
+    <div style="padding: 16px; background: #f5f5f5; margin-top: 8px;">
+      <div style="font-size: 15px; font-weight: 700; margin-bottom: 12px; color: #222;">Você também pode gostar</div>
+      <div id="cart-related-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;"></div>
+    </div>`;
+
+    content.innerHTML = html;
+    
+    renderRelatedList();
+    updateTotals();
+  } catch(e) {
+    console.error('Error rendering cart:', e);
+  }
+}
+
+function renderRelatedList() {
+  const grid = document.getElementById('cart-related-grid');
+  if (grid && typeof CATALOGO_PRODUTOS !== 'undefined') {
+    const listCopy = [...CATALOGO_PRODUTOS];
+    // Embaralha
+    for (let i = listCopy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [listCopy[i], listCopy[j]] = [listCopy[j], listCopy[i]];
+    }
+
+    let allCards = '';
+    listCopy.forEach(p => {
+      const precoFmt = 'R$ ' + parseFloat(p.preco).toFixed(2).replace('.', ',');
+      const precoOrigFmt = p.precoOrig ? 'R$ ' + p.precoOrig : '';
+      const imgSrc = p.img || '';
+      allCards += `
+        <a href="produto-${p.id}.html" style="background:#fff;border-radius:6px;overflow:hidden;border:1px solid #ebebeb;text-decoration:none;color:inherit;display:block;width:100%;">
+          <img src="${imgSrc}" style="width:100%;aspect-ratio:1/1;object-fit:cover;background:#f0f0f0;display:block;" onerror="this.style.background='#eee'">
+          <div style="padding:8px;">
+            <div style="font-size:12px;color:#333;line-height:1.35;margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${p.nome}</div>
+            <div style="display:flex;align-items:baseline;gap:5px;flex-wrap:wrap;margin-bottom:3px;">
+              <span style="font-size:14px;font-weight:700;color:#ff2d55;">${precoFmt}</span>
+              ${precoOrigFmt ? `<span style="font-size:11px;color:#999;text-decoration:line-through;">${precoOrigFmt}</span>` : ''}
+            </div>
+            <div style="font-size:10px;color:#999;">${(p.vendidos || (p.id * 123 % 8000 + 150)) + ' vendido(s)'}</div>
+          </div>
+        </a>`;
+    });
+    grid.innerHTML = allCards;
+  }
+}
+
+function changeQty(id, delta, variacao = '') {
+  const cart = getCart();
+  const item = cart.find(i => Number(i.id) === Number(id) && (variacao ? i.variacao === variacao : true));
+  if (item && item.qty + delta <= 0) {
+    // Abre o modal customizado de confirmação
+    const overlay = document.getElementById('remove-confirm-overlay');
+    if (overlay) {
+      overlay.style.display = 'flex';
+      
+      // Associa as ações de clique
+      document.getElementById('btn-cancel-remove').onclick = function() {
+        overlay.style.display = 'none';
+      };
+      
+      document.getElementById('btn-confirm-remove').onclick = function() {
+        overlay.style.display = 'none';
+        removeFromCart(id, variacao || null);
+        renderCart();
+      };
+    }
+  } else {
+    updateQty(id, delta, variacao || null);
+    renderCart();
+  }
+}
+
+function handleRemove(id, variacao = '') {
+  const overlay = document.getElementById('remove-confirm-overlay');
+  if (overlay) {
+    overlay.style.display = 'flex';
+    document.getElementById('btn-cancel-remove').onclick = function() {
+      overlay.style.display = 'none';
+    };
+    document.getElementById('btn-confirm-remove').onclick = function() {
+      overlay.style.display = 'none';
+      removeFromCart(id, variacao || null);
+      renderCart();
+    };
+  } else {
+    removeFromCart(id, variacao || null);
+    renderCart();
+  }
+}
+
+function irParaCheckout() {
+  const cart = getCart();
+  const checkoutItems = cart.filter((item, index) => itemsSelecionados[index] !== false);
+
+  if (checkoutItems.length === 0) {
+    showToast('Selecione pelo menos um produto para continuar!');
+    return;
+  }
+
+  const address = localStorage.getItem('user_address');
+  const cpf     = localStorage.getItem('user_cpf');
+
+  if (!address) {
+    showToast('Adicione seu endereço de entrega primeiro!');
+    openAddressModal();
+    return;
+  }
+  if (!cpf) {
+    showToast('Adicione seu CPF para continuar!');
+    openCpfModal();
+    return;
+  }
+
+  localStorage.setItem('famosinhos_checkout_cart', JSON.stringify(checkoutItems));
+  window.location.href = 'resumo.html';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  localStorage.removeItem('famosinhos_checkout_cart');
+  loadAddress();
+  renderCart();
+  
+  // Fecha modal de endereço ao clicar fora dele
+  const modal = document.getElementById('address-modal-box');
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeAddressModal();
+    });
+  }
+});
+</script>
+
+<!-- Preload do vídeo do PIX para carregar instantaneamente na próxima tela -->
+<video src="/img/tiktok-anim-v5.mp4" preload="auto" muted playsinline style="display:none;"></video>
+</body>
+</html>
